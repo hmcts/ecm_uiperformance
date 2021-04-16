@@ -31,4 +31,3 @@ withNightlyPipeline("java", product, component) {
 
 
 }
-© 2021 GitHub, Inc.

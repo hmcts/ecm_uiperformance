@@ -1,0 +1,34 @@
+#!groovy
+
+properties([
+      //Uncomment below line to schedule the nightly run
+      pipelineTriggers([cron('00 21 * * *')]),
+        parameters([
+                string(name: 'ENVIRONMENT', defaultValue: 'sandbox', description: 'Environment to test')
+
+        ])
+])
+
+
+
+@Library("Infrastructure") 
+
+def type = "java"
+def product = "ethos"
+def component = "ecm-consumer"
+
+
+withNightlyPipeline("java", product, component) {
+    // Add any environment variables for executing your performance tests for example see below
+    // env.TEST_URL = 'https://ccd-api-gateway-web-aat.service.core-compute-aat.internal'
+    
+    enablePerformanceTest()
+
+    after('performanceTest') {
+        steps.archiveArtifacts allowEmptyArchive: true, artifacts: 'UIPerformance-output/**/*'
+    }
+
+
+
+}
+© 2021 GitHub, Inc.

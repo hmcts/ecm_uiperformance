@@ -1,0 +1,3 @@
+<truLibraryRef engineVersion="2021.0.0.248" timestamp="Wed Mar 31 2021 14:21:44 GMT+0100 (British Summer Time)">
+<step type="library" stepId="step:{c0415143-9d5c-5a73-171d-d46b11cf256e}" action="ECM_UI_Performance" level="43" arguments="{}" snapshotId="ccthlkcet" global="true" location="C:\Users\Solirius\Documents\UI Performance Testing\Library\ECMUIPerformance.xml"/>
+</truLibraryRef>

@@ -1,0 +1,52 @@
+Virtual User Script started at : 2021-04-08 10:50:10
+TruClient Replay (build 0248) for LoadRunner Professional 2021.0.0, build 0371. OS: Windows 10, Browser: Chromium 86.0.4240.183, initialized on 2021/04/08 at 10:50:06 (1617875406,241s)
+Selected Run-Time Settings:
+    Simulate a new user on each iteration...............: 1
+    Using system proxy settings
+    Check for newer versions of stored pages: 4 (Automatically)
+    Keep-Alive..........................................: 1
+    Proxy Keep-Alive....................................: 1
+    Keep-Alive timeout (ms).............................: 60000
+    HTTP Version........................................: 1.1
+    Proxy HTTP Version..................................: 1.1
+    DNS cache entries...................................: 20
+    Run-Time Settings file..............................: "C:\Users\Solirius\Documents\VuGen\Scripts\LoadRunner2021\002_CreateCase_ExtraResondents_UIPerformanceTestv4\\default.cfg"
+    Vuser directory.....................................: "C:\Users\Solirius\AppData\Local\Temp\TC\Temp\"
+    Vuser output directory..............................: "C:\Users\Solirius\AppData\Local\Temp\TC\Temp\"
+End of selected Run-Time Settings
+Please refer to the ReadMe file in the LoadRunner Professional installation directory for notes about measurements and logging
+Running Vuser...
+Starting iteration 1.
+Notify: Transaction "002_001_ECM_LaunchHomePage" started.
+t=00011644ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00011649ms: Warning -205179: The TC.getParam API is deprecated because it is synchronous. Use the asynchronous API TCA.getParam instead. For details, see https://admhelp.microfocus.com/tc/en/2021.0.0/Content/TruClient/procedures/Async_API_Example.htm.    [MsgId: MWAR-205179]
+t=00012947ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00012961ms: Step 1: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00015224ms: Step 1: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 3,5840 Think Time: 0,0040 Wasted Time: 0,6480).
+t=00015227ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00018436ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00018440ms: Step 3: Sign in started    [MsgId: MMSG-205180]
+t=00018955ms: Step 3.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00021179ms: Step 3.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00021681ms: Step 3.2: Type Users in Email address textbox started    [MsgId: MMSG-205180]
+t=00031797ms: Step 3.2: Type ccdloadtest4501@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00032313ms: Step 3.3: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00034541ms: Step 3.3: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00035043ms: Step 3.4: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 1 [table  = Password].
+t=00038768ms: Step 3.4: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" started.
+t=00039272ms: Step 3.5: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00042250ms: Step 3.5: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00042255ms: Step 3: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00042258ms: Step 4: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" ended with a "Stop" status (Duration: 3,9786).
+Action was aborted.
+Ending Vuser...
+Vuser Terminated.
+t=00043565ms: Step 4: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00043567ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00046785ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00046795ms: Step 1: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00067293ms: Error -205177: Step 1: Verify Case List's Visible Text contains Case List failed - Target object was not found. Identification Method: Automatic       Snapshot Info [MSH End 0]    [MsgId: MERR-205177]

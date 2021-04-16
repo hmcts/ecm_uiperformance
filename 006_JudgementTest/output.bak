@@ -1,0 +1,512 @@
+Virtual User Script started at : 2021-04-13 16:04:14
+TruClient Replay (build 0248) for LoadRunner Professional 2021.0.0, build 0371. OS: Windows 10, Browser: Chromium 86.0.4240.183, initialized on 2021/04/13 at 16:04:10 (1618326250,358s)
+Selected Run-Time Settings:
+    Simulate a new user on each iteration...............: 1
+    Using system proxy settings
+    Check for newer versions of stored pages: 4 (Automatically)
+    Keep-Alive..........................................: 1
+    Proxy Keep-Alive....................................: 1
+    Keep-Alive timeout (ms).............................: 60000
+    HTTP Version........................................: 1.1
+    Proxy HTTP Version..................................: 1.1
+    DNS cache entries...................................: 20
+    Run-Time Settings file..............................: "C:\Users\Solirius\Documents\VuGen\Scripts\LoadRunner2021\006_JudgementTestv2\\default.cfg"
+    Vuser directory.....................................: "C:\Users\Solirius\AppData\Local\Temp\TC\Temp\"
+    Vuser output directory..............................: "C:\Users\Solirius\AppData\Local\Temp\TC\Temp\"
+End of selected Run-Time Settings
+Please refer to the ReadMe file in the LoadRunner Professional installation directory for notes about measurements and logging
+Running Vuser...
+Starting iteration 1.
+Notify: Transaction "006_001_LaunchHomePage" started.
+t=00005065ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00005069ms: Warning -205179: The TC.getParam API is deprecated because it is synchronous. Use the asynchronous API TCA.getParam instead. For details, see https://admhelp.microfocus.com/tc/en/2021.0.0/Content/TruClient/procedures/Async_API_Example.htm.    [MsgId: MWAR-205179]
+t=00007196ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00007203ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00008460ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_001_LaunchHomePage" ended with a "Pass" status (Duration: 3,3990 Think Time: 0,0030 Wasted Time: 0,6520).
+t=00008465ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00011681ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00011693ms: Step 1: Sign in started    [MsgId: MMSG-205180]
+t=00012200ms: Step 1.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00014434ms: Step 1.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00014947ms: Step 1.2: Type Username in Email address textbox started    [MsgId: MMSG-205180]
+t=00025625ms: Step 1.2: Type ccdloadtest4504@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00026127ms: Step 1.3: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00028349ms: Step 1.3: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00028853ms: Step 1.4: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00031079ms: Step 1.4: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00031596ms: Step 1.5: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 1 [table  = Password].
+t=00035205ms: Step 1.5: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_002_SignIn" started.
+t=00035708ms: Step 1.6: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00037336ms: Step 1.6: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00037340ms: Step 1.7: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00038778ms: Step 1.7: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_002_SignIn" ended with a "Pass" status (Duration: 3,0720 Think Time: 0,0020 Wasted Time: 0,6300).
+t=00038781ms: Step 1: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00038784ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00041993ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00042509ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00044561ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00045071ms: Step 2: Click on Case Number textbox started    [MsgId: MMSG-205180]
+t=00047302ms: Step 2: Click on Case Number textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00047819ms: Step 3: Type CaseNumberSearch in Case Number textbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter CaseNumberSearch = 1 [table  = CaseNumberSearch].
+t=00051146ms: Step 3: Type 181300558 in Case Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_003_ECM_SearchCase" started.
+t=00051649ms: Step 4: Click on Apply button started    [MsgId: MMSG-205180]
+t=00052742ms: Step 4: Click on Apply button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_003_ECM_SearchCase" ended with a "Pass" status (Duration: 1,0940 Wasted Time: 0,3600).
+t=00052745ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00055964ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_004_ECM_SelectCase" started.
+t=00056481ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link started    [MsgId: MMSG-205180]
+t=00057985ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00057988ms: Step 2: Verify Next step's Visible Text contains Next step started    [MsgId: MMSG-205180]
+t=00058204ms: Step 2: Verify Next step's Visible Text contains Next step successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_004_ECM_SelectCase" ended with a "Pass" status (Duration: 1,7250 Think Time: 0,0030 Wasted Time: 0,5770).
+t=00058207ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00061425ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00061940ms: Step 1: Select Judgment from Next step listbox started    [MsgId: MMSG-205180]
+t=00062895ms: Step 1: Select Judgment from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_005_ECM_SearchJudgement" started.
+t=00063411ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00066308ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00066311ms: Step 3: Verify Judgment's Visible Text contains Judgment started    [MsgId: MMSG-205180]
+t=00066529ms: Step 3: Verify Judgment's Visible Text contains Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_005_ECM_SearchJudgement" ended with a "Pass" status (Duration: 3,1200 Think Time: 0,0020 Wasted Time: 0,5780).
+t=00066531ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00069745ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00069755ms: Step 1: Continue started    [MsgId: MMSG-205180]
+t=00070262ms: Step 1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00072489ms: Step 1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00072492ms: Step 1.2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00075708ms: Step 1.2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00076225ms: Step 1.3: Click on No radio started    [MsgId: MMSG-205180]
+t=00078254ms: Step 1.3: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00078256ms: Step 1.4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00081473ms: Step 1.4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00081990ms: Step 1.5: Click on No radio started    [MsgId: MMSG-205180]
+t=00084217ms: Step 1.5: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00084724ms: Step 1.6: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00086974ms: Step 1.6: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00087490ms: Step 1.7: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00088552ms: Step 1.7: Type 16 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00089054ms: Step 1.8: Click on Month textbox started    [MsgId: MMSG-205180]
+t=00091303ms: Step 1.8: Click on Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00091815ms: Step 1.9: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00093181ms: Step 1.9: Type 03 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00093686ms: Step 1.10: Click on Year textbox started    [MsgId: MMSG-205180]
+t=00095927ms: Step 1.10: Click on Year textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00096429ms: Step 1.11: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00098187ms: Step 1.11: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00098690ms: Step 1.12: Select Judgment from Judgment Type listbox started    [MsgId: MMSG-205180]
+t=00100728ms: Step 1.12: Select Judgment from Judgment Type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00100730ms: Step 1.13: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00103948ms: Step 1.13: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00104452ms: Step 1.14: Select Reconsideration from Judgment Type listbox started    [MsgId: MMSG-205180]
+t=00106493ms: Step 1.14: Select Reconsideration from Judgment Type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00107007ms: Step 1.15: Select Liability from Liability (Optional) listbox started    [MsgId: MMSG-205180]
+t=00109053ms: Step 1.15: Select Liability from Liability (Optional) listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00109570ms: Step 1.16: Click on Add new button started    [MsgId: MMSG-205180]
+t=00111802ms: Step 1.16: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00111805ms: Step 1.17: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00115016ms: Step 1.17: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00115518ms: Step 1.18: Select ADT from Jurisdiction listbox started    [MsgId: MMSG-205180]
+t=00117568ms: Step 1.18: Select ADT from Jurisdiction listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00118076ms: Step 1.19: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00120316ms: Step 1.19: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00120832ms: Step 1.20: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00123816ms: Step 1.20: Type 16 in Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00124318ms: Step 1.21: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00127274ms: Step 1.21: Type 03 in Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00127790ms: Step 1.22: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00132038ms: Step 1.22: Type 2021 in Year textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00132554ms: Step 1.23: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00135578ms: Step 1.23: Type 16 in Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00136095ms: Step 1.24: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00139475ms: Step 1.24: Type 03 in Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00139992ms: Step 1.25: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00141249ms: Step 1.25: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00141751ms: Step 1.26: Type UI Performance test Run 16/03/2021 in Judgment Notes (Optional) textbox started    [MsgId: MMSG-205180]
+t=00154822ms: Step 1.26: Type UI Performance test Run 16/03/2021 in Judgment Notes (Optional) textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00155334ms: Step 1.27: Click on No radio started    [MsgId: MMSG-205180]
+t=00157581ms: Step 1.27: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00158084ms: Step 1.28: Click on No radio started    [MsgId: MMSG-205180]
+t=00160319ms: Step 1.28: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00160822ms: Step 1.29: Click on No radio started    [MsgId: MMSG-205180]
+t=00163061ms: Step 1.29: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00163575ms: Step 1.30: Click on No radio started    [MsgId: MMSG-205180]
+t=00165819ms: Step 1.30: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00166321ms: Step 1.31: Click on No radio started    [MsgId: MMSG-205180]
+t=00168572ms: Step 1.31: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00169088ms: Step 1.32: Click on No radio started    [MsgId: MMSG-205180]
+t=00171335ms: Step 1.32: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00171338ms: Step 1.33: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00174551ms: Step 1.33: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_006_ECM_AddNewJudgementContinue" started.
+t=00175053ms: Step 1.34: Click on Continue button started    [MsgId: MMSG-205180]
+t=00178306ms: Step 1.34: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00178310ms: Step 1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00178313ms: Step 2: Verify Judgment's Visible Text contains Judgment started    [MsgId: MMSG-205180]
+t=00178541ms: Step 2: Verify Judgment's Visible Text contains Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_006_ECM_AddNewJudgementContinue" ended with a "Pass" status (Duration: 3,4890 Think Time: 0,0020 Wasted Time: 0,5970).
+t=00178544ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00181759ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" started.
+t=00182276ms: Step 1: Click on Submit button started    [MsgId: MMSG-205180]
+t=00185176ms: Step 1: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00185179ms: Step 2: Verify Judgement Added's Visible Text contains has been updated with event: Judgment started    [MsgId: MMSG-205180]
+t=00185410ms: Step 2: Verify Judgement Added's Visible Text contains has been updated with event: Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" ended with a "Pass" status (Duration: 3,1350 Think Time: 0,0020 Wasted Time: 0,5890).
+t=00185413ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00188626ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_CleanUp" started.
+t=00189140ms: Step 1: Select Judgment from Next step listbox started    [MsgId: MMSG-205180]
+t=00191193ms: Step 1: Select Judgment from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00191707ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00194569ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00194572ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00197795ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00198311ms: Step 4: Click on Remove button started    [MsgId: MMSG-205180]
+t=00200539ms: Step 4: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00200542ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00203750ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00204251ms: Step 6: Click on Remove button started    [MsgId: MMSG-205180]
+t=00206480ms: Step 6: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00206484ms: Step 7: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00209698ms: Step 7: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00210214ms: Step 8: Click on Continue button started    [MsgId: MMSG-205180]
+t=00213035ms: Step 8: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00213039ms: Step 9: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00216261ms: Step 9: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00216764ms: Step 10: Click on Submit button started    [MsgId: MMSG-205180]
+t=00219583ms: Step 10: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00219587ms: Step 11: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00222801ms: Step 11: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00223304ms: Step 12: Click on Case list link started    [MsgId: MMSG-205180]
+t=00225086ms: Step 12: Click on Case list link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00225089ms: Step 13: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00228310ms: Step 13: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00228813ms: Step 14: Click on Reset button started    [MsgId: MMSG-205180]
+t=00229222ms: Step 14: Click on Reset button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_CleanUp" ended with a "Pass" status (Duration: 40,0830 Think Time: 18,0740 Wasted Time: 10,4660).
+t=00229225ms: Step 15: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00232431ms: Step 15: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00232948ms: Step 1: Click on Sign out link started    [MsgId: MMSG-205180]
+t=00234009ms: Step 1: Click on Sign out link successfully completed with End Event "Document Loaded"    [MsgId: MMSG-205180]
+t=00234012ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00234245ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Ending iteration 1.
+Starting iteration 2.
+Notify: Next row for parameter Username = 2 [table  = Username].
+Notify: Getting new value for parameter 'Username': table = 'Username.dat' column = '0' row = '2'.
+Notify: Next row for parameter URL = 1 [table  = URL].
+Notify: Getting new value for parameter 'URL': table = 'URL.dat' column = '0' row = '1'.
+Notify: Next row for parameter CaseNumberSelect = 2 [table  = CaseNumberSelect].
+Notify: Getting new value for parameter 'CaseNumberSelect': table = 'Username.dat' column = '3' row = '2'.
+Notify: Next row for parameter Password = 2 [table  = Password].
+Notify: Getting new value for parameter 'Password': table = 'Username.dat' column = '1' row = '2'.
+Notify: Next row for parameter CaseNumberSearch = 2 [table  = CaseNumberSearch].
+Notify: Getting new value for parameter 'CaseNumberSearch': table = 'Username.dat' column = '2' row = '2'.
+Notify: Transaction "006_001_LaunchHomePage" started.
+t=00235057ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00236545ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00236548ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00237784ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_001_LaunchHomePage" ended with a "Pass" status (Duration: 2,7290 Think Time: 0,0020 Wasted Time: 0,6580).
+t=00237786ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00240999ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00241008ms: Step 1: Sign in started    [MsgId: MMSG-205180]
+t=00241519ms: Step 1.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00243749ms: Step 1.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00244252ms: Step 1.2: Type Username in Email address textbox started    [MsgId: MMSG-205180]
+t=00254231ms: Step 1.2: Type ccdloadtest4505@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00254744ms: Step 1.3: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00256965ms: Step 1.3: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00257481ms: Step 1.4: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00259715ms: Step 1.4: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00260231ms: Step 1.5: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 2 [table  = Password].
+t=00264135ms: Step 1.5: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_002_SignIn" started.
+t=00264652ms: Step 1.6: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00266471ms: Step 1.6: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00266473ms: Step 1.7: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00267897ms: Step 1.7: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_002_SignIn" ended with a "Pass" status (Duration: 3,2460 Think Time: 0,0010 Wasted Time: 0,6320).
+t=00267900ms: Step 1: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00267903ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00271112ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00271628ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00273686ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00274200ms: Step 2: Click on Case Number textbox started    [MsgId: MMSG-205180]
+t=00276428ms: Step 2: Click on Case Number textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00276933ms: Step 3: Type CaseNumberSearch in Case Number textbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter CaseNumberSearch = 2 [table  = CaseNumberSearch].
+t=00280985ms: Step 3: Type 181300559 in Case Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_003_ECM_SearchCase" started.
+t=00281501ms: Step 4: Click on Apply button started    [MsgId: MMSG-205180]
+t=00282782ms: Step 4: Click on Apply button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_003_ECM_SearchCase" ended with a "Pass" status (Duration: 1,2820 Wasted Time: 0,3730).
+t=00282784ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00286006ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_004_ECM_SelectCase" started.
+t=00286525ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link started    [MsgId: MMSG-205180]
+t=00287840ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00287844ms: Step 2: Verify Next step's Visible Text contains Next step started    [MsgId: MMSG-205180]
+t=00288057ms: Step 2: Verify Next step's Visible Text contains Next step successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_004_ECM_SelectCase" ended with a "Pass" status (Duration: 1,5350 Think Time: 0,0010 Wasted Time: 0,5800).
+t=00288060ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00291281ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00291797ms: Step 1: Select Judgment from Next step listbox started    [MsgId: MMSG-205180]
+t=00292930ms: Step 1: Select Judgment from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_005_ECM_SearchJudgement" started.
+t=00293446ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00297041ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00297045ms: Step 3: Verify Judgment's Visible Text contains Judgment started    [MsgId: MMSG-205180]
+t=00297259ms: Step 3: Verify Judgment's Visible Text contains Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_005_ECM_SearchJudgement" ended with a "Pass" status (Duration: 3,8150 Think Time: 0,0030 Wasted Time: 0,5690).
+t=00297261ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00300482ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00300492ms: Step 1: Continue started    [MsgId: MMSG-205180]
+t=00301001ms: Step 1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00303229ms: Step 1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00303232ms: Step 1.2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00306444ms: Step 1.2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00306947ms: Step 1.3: Click on No radio started    [MsgId: MMSG-205180]
+t=00308972ms: Step 1.3: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00308974ms: Step 1.4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00312185ms: Step 1.4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00312699ms: Step 1.5: Click on No radio started    [MsgId: MMSG-205180]
+t=00314930ms: Step 1.5: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00315446ms: Step 1.6: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00317702ms: Step 1.6: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00318218ms: Step 1.7: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00319207ms: Step 1.7: Type 16 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00319710ms: Step 1.8: Click on Month textbox started    [MsgId: MMSG-205180]
+t=00321955ms: Step 1.8: Click on Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00322467ms: Step 1.9: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00323789ms: Step 1.9: Type 03 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00324293ms: Step 1.10: Click on Year textbox started    [MsgId: MMSG-205180]
+t=00326537ms: Step 1.10: Click on Year textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00327040ms: Step 1.11: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00328342ms: Step 1.11: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00328857ms: Step 1.12: Select Judgment from Judgment Type listbox started    [MsgId: MMSG-205180]
+t=00330898ms: Step 1.12: Select Judgment from Judgment Type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00330901ms: Step 1.13: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00334118ms: Step 1.13: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00334635ms: Step 1.14: Select Reconsideration from Judgment Type listbox started    [MsgId: MMSG-205180]
+t=00336683ms: Step 1.14: Select Reconsideration from Judgment Type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00337195ms: Step 1.15: Select Liability from Liability (Optional) listbox started    [MsgId: MMSG-205180]
+t=00339241ms: Step 1.15: Select Liability from Liability (Optional) listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00339755ms: Step 1.16: Click on Add new button started    [MsgId: MMSG-205180]
+t=00341988ms: Step 1.16: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00341991ms: Step 1.17: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00345205ms: Step 1.17: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00345722ms: Step 1.18: Select ADT from Jurisdiction listbox started    [MsgId: MMSG-205180]
+t=00347775ms: Step 1.18: Select ADT from Jurisdiction listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00348287ms: Step 1.19: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00350541ms: Step 1.19: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00351057ms: Step 1.20: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00353817ms: Step 1.20: Type 16 in Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00354321ms: Step 1.21: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00357173ms: Step 1.21: Type 03 in Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00357676ms: Step 1.22: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00362351ms: Step 1.22: Type 2021 in Year textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00362853ms: Step 1.23: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00366017ms: Step 1.23: Type 16 in Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00366522ms: Step 1.24: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00369504ms: Step 1.24: Type 03 in Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00370019ms: Step 1.25: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00371319ms: Step 1.25: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00371823ms: Step 1.26: Type UI Performance test Run 16/03/2021 in Judgment Notes (Optional) textbox started    [MsgId: MMSG-205180]
+t=00388797ms: Step 1.26: Type UI Performance test Run 16/03/2021 in Judgment Notes (Optional) textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00389315ms: Step 1.27: Click on No radio started    [MsgId: MMSG-205180]
+t=00391564ms: Step 1.27: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00392066ms: Step 1.28: Click on No radio started    [MsgId: MMSG-205180]
+t=00394304ms: Step 1.28: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00394820ms: Step 1.29: Click on No radio started    [MsgId: MMSG-205180]
+t=00397062ms: Step 1.29: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00397579ms: Step 1.30: Click on No radio started    [MsgId: MMSG-205180]
+t=00399817ms: Step 1.30: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00400332ms: Step 1.31: Click on No radio started    [MsgId: MMSG-205180]
+t=00402571ms: Step 1.31: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00403088ms: Step 1.32: Click on No radio started    [MsgId: MMSG-205180]
+t=00405328ms: Step 1.32: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00405330ms: Step 1.33: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00408550ms: Step 1.33: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_006_ECM_AddNewJudgementContinue" started.
+t=00409053ms: Step 1.34: Click on Continue button started    [MsgId: MMSG-205180]
+t=00410918ms: Step 1.34: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00410922ms: Step 1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00410925ms: Step 2: Verify Judgment's Visible Text contains Judgment started    [MsgId: MMSG-205180]
+t=00411139ms: Step 2: Verify Judgment's Visible Text contains Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_006_ECM_AddNewJudgementContinue" ended with a "Pass" status (Duration: 2,0880 Think Time: 0,0020 Wasted Time: 0,4620).
+t=00411141ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00414354ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" started.
+t=00414865ms: Step 1: Click on Submit button started    [MsgId: MMSG-205180]
+t=00435350ms: Error -205177: Step 1: Click on Submit button failed - Target object was not found. Identification Method: Descriptors       Snapshot Info [MSH 2 0]    [MsgId: MERR-205177]
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" ended with a "Fail" status (Duration: 20,4974).
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" has 1 error message(s).
+Notify: The 1st error message associated with transaction "006_007_ECM_SubmitNewJudgment" is "Error -205177: Step 1: Click on Submit button failed - Target object was not found. Identification Method: Descriptors"
+Ending iteration 2.
+Starting iteration 3.
+Notify: Next row for parameter Username = 3 [table  = Username].
+Notify: Getting new value for parameter 'Username': table = 'Username.dat' column = '0' row = '3'.
+Notify: Next row for parameter URL = 1 [table  = URL].
+Notify: Getting new value for parameter 'URL': table = 'URL.dat' column = '0' row = '1'.
+Notify: Next row for parameter CaseNumberSelect = 3 [table  = CaseNumberSelect].
+Notify: Getting new value for parameter 'CaseNumberSelect': table = 'Username.dat' column = '3' row = '3'.
+Notify: Next row for parameter Password = 3 [table  = Password].
+Notify: Getting new value for parameter 'Password': table = 'Username.dat' column = '1' row = '3'.
+Notify: Next row for parameter CaseNumberSearch = 3 [table  = CaseNumberSearch].
+Notify: Getting new value for parameter 'CaseNumberSearch': table = 'Username.dat' column = '2' row = '3'.
+Notify: Transaction "006_001_LaunchHomePage" started.
+t=00436169ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00437464ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00437467ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00438716ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_001_LaunchHomePage" ended with a "Pass" status (Duration: 2,5500 Think Time: 0,0020 Wasted Time: 0,6550).
+t=00438719ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00441929ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00441939ms: Step 1: Sign in started    [MsgId: MMSG-205180]
+t=00442444ms: Step 1.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00444662ms: Step 1.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00445178ms: Step 1.2: Type Username in Email address textbox started    [MsgId: MMSG-205180]
+t=00454544ms: Step 1.2: Type ccdloadtest4506@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00455059ms: Step 1.3: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00457283ms: Step 1.3: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00457800ms: Step 1.4: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00460022ms: Step 1.4: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00460527ms: Step 1.5: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 3 [table  = Password].
+t=00463336ms: Step 1.5: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_002_SignIn" started.
+t=00463841ms: Step 1.6: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00465585ms: Step 1.6: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00465588ms: Step 1.7: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00467016ms: Step 1.7: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_002_SignIn" ended with a "Pass" status (Duration: 3,1760 Think Time: 0,0020 Wasted Time: 0,6300).
+t=00467019ms: Step 1: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00467021ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00470243ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00470764ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00471528ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00472041ms: Step 2: Click on Case Number textbox started    [MsgId: MMSG-205180]
+t=00474271ms: Step 2: Click on Case Number textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00474776ms: Step 3: Type CaseNumberSearch in Case Number textbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter CaseNumberSearch = 3 [table  = CaseNumberSearch].
+t=00477250ms: Step 3: Type 181300560 in Case Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_003_ECM_SearchCase" started.
+t=00477754ms: Step 4: Click on Apply button started    [MsgId: MMSG-205180]
+t=00478910ms: Step 4: Click on Apply button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_003_ECM_SearchCase" ended with a "Pass" status (Duration: 1,1590 Wasted Time: 0,3760).
+t=00478912ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00482132ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_004_ECM_SelectCase" started.
+t=00482650ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link started    [MsgId: MMSG-205180]
+t=00484201ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00484204ms: Step 2: Verify Next step's Visible Text contains Next step started    [MsgId: MMSG-205180]
+t=00484437ms: Step 2: Verify Next step's Visible Text contains Next step successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_004_ECM_SelectCase" ended with a "Pass" status (Duration: 1,7880 Think Time: 0,0010 Wasted Time: 0,5870).
+t=00484439ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00487651ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00488171ms: Step 1: Select Judgment from Next step listbox started    [MsgId: MMSG-205180]
+t=00489359ms: Step 1: Select Judgment from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_005_ECM_SearchJudgement" started.
+t=00489873ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00492755ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00492758ms: Step 3: Verify Judgment's Visible Text contains Judgment started    [MsgId: MMSG-205180]
+t=00492977ms: Step 3: Verify Judgment's Visible Text contains Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_005_ECM_SearchJudgement" ended with a "Pass" status (Duration: 3,1060 Think Time: 0,0020 Wasted Time: 0,5740).
+t=00492980ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00496190ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00496199ms: Step 1: Continue started    [MsgId: MMSG-205180]
+t=00496707ms: Step 1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00498937ms: Step 1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00498941ms: Step 1.2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00502150ms: Step 1.2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00502667ms: Step 1.3: Click on No radio started    [MsgId: MMSG-205180]
+t=00504708ms: Step 1.3: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00504710ms: Step 1.4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00507922ms: Step 1.4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00508438ms: Step 1.5: Click on No radio started    [MsgId: MMSG-205180]
+t=00510663ms: Step 1.5: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00511165ms: Step 1.6: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00513430ms: Step 1.6: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00513945ms: Step 1.7: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00515136ms: Step 1.7: Type 16 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00515649ms: Step 1.8: Click on Month textbox started    [MsgId: MMSG-205180]
+t=00517895ms: Step 1.8: Click on Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00518399ms: Step 1.9: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00519516ms: Step 1.9: Type 03 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00520019ms: Step 1.10: Click on Year textbox started    [MsgId: MMSG-205180]
+t=00522260ms: Step 1.10: Click on Year textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00522776ms: Step 1.11: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00524717ms: Step 1.11: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00525222ms: Step 1.12: Select Judgment from Judgment Type listbox started    [MsgId: MMSG-205180]
+t=00527266ms: Step 1.12: Select Judgment from Judgment Type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00527269ms: Step 1.13: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00530487ms: Step 1.13: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00531005ms: Step 1.14: Select Reconsideration from Judgment Type listbox started    [MsgId: MMSG-205180]
+t=00533044ms: Step 1.14: Select Reconsideration from Judgment Type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00533546ms: Step 1.15: Select Liability from Liability (Optional) listbox started    [MsgId: MMSG-205180]
+t=00535591ms: Step 1.15: Select Liability from Liability (Optional) listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00536105ms: Step 1.16: Click on Add new button started    [MsgId: MMSG-205180]
+t=00538368ms: Step 1.16: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00538372ms: Step 1.17: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00541593ms: Step 1.17: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00542095ms: Step 1.18: Select ADT from Jurisdiction listbox started    [MsgId: MMSG-205180]
+t=00544152ms: Step 1.18: Select ADT from Jurisdiction listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00544665ms: Step 1.19: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00546922ms: Step 1.19: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00547426ms: Step 1.20: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00550153ms: Step 1.20: Type 16 in Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00550671ms: Step 1.21: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00553826ms: Step 1.21: Type 03 in Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00554340ms: Step 1.22: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00558162ms: Step 1.22: Type 2021 in Year textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00558665ms: Step 1.23: Type 16 in Day textbox started    [MsgId: MMSG-205180]
+t=00561447ms: Step 1.23: Type 16 in Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00561962ms: Step 1.24: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00565132ms: Step 1.24: Type 03 in Month textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00565646ms: Step 1.25: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00567829ms: Step 1.25: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00568316ms: Step 1.26: Type UI Performance test Run 16/03/2021 in Judgment Notes (Optional) textbox started    [MsgId: MMSG-205180]
+t=00584378ms: Step 1.26: Type UI Performance test Run 16/03/2021 in Judgment Notes (Optional) textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00584891ms: Step 1.27: Click on No radio started    [MsgId: MMSG-205180]
+t=00587145ms: Step 1.27: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00587659ms: Step 1.28: Click on No radio started    [MsgId: MMSG-205180]
+t=00589907ms: Step 1.28: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00590422ms: Step 1.29: Click on No radio started    [MsgId: MMSG-205180]
+t=00592669ms: Step 1.29: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00593183ms: Step 1.30: Click on No radio started    [MsgId: MMSG-205180]
+t=00595452ms: Step 1.30: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00595969ms: Step 1.31: Click on No radio started    [MsgId: MMSG-205180]
+t=00598216ms: Step 1.31: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00598730ms: Step 1.32: Click on No radio started    [MsgId: MMSG-205180]
+t=00600978ms: Step 1.32: Click on No radio successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00600983ms: Step 1.33: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00604197ms: Step 1.33: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_006_ECM_AddNewJudgementContinue" started.
+t=00604702ms: Step 1.34: Click on Continue button started    [MsgId: MMSG-205180]
+t=00606833ms: Step 1.34: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00606836ms: Step 1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00606839ms: Step 2: Verify Judgment's Visible Text contains Judgment started    [MsgId: MMSG-205180]
+t=00607053ms: Step 2: Verify Judgment's Visible Text contains Judgment successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_006_ECM_AddNewJudgementContinue" ended with a "Pass" status (Duration: 2,3530 Think Time: 0,0010 Wasted Time: 0,4830).
+t=00607055ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00610276ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" started.
+t=00610796ms: Step 1: Click on Submit button started    [MsgId: MMSG-205180]
+t=00631138ms: Error -205177: Step 1: Click on Submit button failed - Target object was not found. Identification Method: Descriptors       Snapshot Info [MSH 3 1]    [MsgId: MERR-205177]
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" ended with a "Fail" status (Duration: 20,3571).
+Notify: Transaction "006_007_ECM_SubmitNewJudgment" has 1 error message(s).
+Notify: The 1st error message associated with transaction "006_007_ECM_SubmitNewJudgment" is "Error -205177: Step 1: Click on Submit button failed - Target object was not found. Identification Method: Descriptors"
+Ending iteration 3.
+Action was aborted.
+Ending Vuser...
+Vuser Terminated.

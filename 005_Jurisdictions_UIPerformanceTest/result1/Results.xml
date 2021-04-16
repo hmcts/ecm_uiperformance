@@ -1,0 +1,1298 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED SolManSolutionId CDATA #IMPLIED SolManProjectId CDATA #IMPLIED SolManTestPlanId CDATA #IMPLIED SolManTestPackageId CDATA #IMPLIED SolManUserInfoData CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group|Action) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*, Summary,ActionMaintenanceSummary*, NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,DataMapping?, Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED isCountable (False|True) "False" >
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*, DataMapping?, NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT DataMapping ( DataMappedItem* )>
+<!ELEMENT DataMappedItem EMPTY >
+<!ATTLIST DataMappedItem dsName CDATA #REQUIRED >
+<!ATTLIST DataMappedItem rowId CDATA #REQUIRED >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED StepFlowItemKey CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="GMT Standard Time">
+<General productName="Vugen" productVer="2021" os="" host="DESKTOP-G16F30O"><DocLocation><![CDATA[C:\Users\Solirius\Documents\VuGen\Scripts\LoadRunner2021\005_Jurisdictions_UIPerformanceTestv2]]></DocLocation></General>
+<Doc rID="T1"   productName= "Vugen"  >
+<DName><![CDATA[005_Jurisdictions_UIPerformanceTestv2]]></DName>
+<Res><![CDATA[result1]]></Res>
+<Action rID="T2">
+<AName><![CDATA[Init]]></AName>
+<Summary sTime="13/04/2021 - 10:24:34" eTime="13/04/2021 - 10:24:34" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="5" >
+<Disp><![CDATA[Init Summary]]></Disp>
+</NodeArgs>
+</Action>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action]]></AName>
+<Summary sTime="13/04/2021 - 10:24:41" eTime="13/04/2021 - 10:24:41" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="8" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T5">
+<AName><![CDATA[LaunchHomePage]]></AName>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Navigate]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Navigate to https://manage-case.perf...tform.hmcts.net/ was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:24:43]]></Time>
+<TimeTick>1618305883</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="11" status="Passed" >
+<Disp><![CDATA[Navigate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Sign in's Visible Text contains Sign in was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:24:45]]></Time>
+<TimeTick>1618305885</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="12" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:24:41" eTime="13/04/2021 - 10:24:48" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="10" status="Passed" >
+<Disp><![CDATA[LaunchHomePage Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T8">
+<AName><![CDATA[SignIn]]></AName>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.1: Click on Email address textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:24:51]]></Time>
+<TimeTick>1618305891</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="15" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.2: Type ccdloadtest4501@gmail.com in Email address textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:01]]></Time>
+<TimeTick>1618305901</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="16" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.5: Click on Password passwordbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:04]]></Time>
+<TimeTick>1618305904</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="17" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.6: Type ********** in Password passwordbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:10]]></Time>
+<TimeTick>1618305910</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="18" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.7: Click on Sign in button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:12]]></Time>
+<TimeTick>1618305912</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="19" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.8: Verify Case List's Visible Text contains Case List was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:14]]></Time>
+<TimeTick>1618305914</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="20" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:24:48" eTime="13/04/2021 - 10:25:17" passed="6" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="14" status="Passed" >
+<Disp><![CDATA[SignIn Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T15">
+<AName><![CDATA[SearchCase]]></AName>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Select Leeds - Singles from Case type listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:20]]></Time>
+<TimeTick>1618305920</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="23" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Click on Case Number textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:22]]></Time>
+<TimeTick>1618305922</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="24" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Type 181300555 in Case Number textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:27]]></Time>
+<TimeTick>1618305927</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="25" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Apply button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:29]]></Time>
+<TimeTick>1618305929</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="26" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:25:17" eTime="13/04/2021 - 10:25:32" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="22" status="Passed" >
+<Disp><![CDATA[SearchCase Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T20">
+<AName><![CDATA[SelectCase]]></AName>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on ArgsContext.LR.getParam(...seNumberSelect") link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:35]]></Time>
+<TimeTick>1618305935</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="29" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Next step's Visible Text contains Next step was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:35]]></Time>
+<TimeTick>1618305935</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="30" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:25:32" eTime="13/04/2021 - 10:25:38" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="28" status="Passed" >
+<Disp><![CDATA[SelectCase Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T23">
+<AName><![CDATA[SelectJurisdiction]]></AName>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Select Jurisdiction from Next step listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:40]]></Time>
+<TimeTick>1618305940</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="33" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Click on Go button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:44]]></Time>
+<TimeTick>1618305944</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="34" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Verify Jurisdiction's Visible Text contains Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:44]]></Time>
+<TimeTick>1618305944</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="35" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:25:38" eTime="13/04/2021 - 10:25:47" passed="3" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="32" status="Passed" >
+<Disp><![CDATA[SelectJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T27">
+<AName><![CDATA[AddNewJurisdiction]]></AName>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Add new button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:50]]></Time>
+<TimeTick>1618305950</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="38" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Select ADT from Jurisdiction CodeThis... listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:52]]></Time>
+<TimeTick>1618305952</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="39" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Select Unsuccessful at hearing from Outcome (Optional) listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:25:55]]></Time>
+<TimeTick>1618305955</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="40" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Click on Continue button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:00]]></Time>
+<TimeTick>1618305960</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="41" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:25:47" eTime="13/04/2021 - 10:26:03" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="37" status="Passed" >
+<Disp><![CDATA[AddNewJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T32">
+<AName><![CDATA[SubmitJurisdiction]]></AName>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Submit button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:07]]></Time>
+<TimeTick>1618305967</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="44" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:07]]></Time>
+<TimeTick>1618305967</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="45" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Jurisdictions tab was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:12]]></Time>
+<TimeTick>1618305972</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="46" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Verify Jurisdiction's Visible Text contains Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:12]]></Time>
+<TimeTick>1618305972</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="47" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:26:03" eTime="13/04/2021 - 10:26:15" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="43" status="Passed" >
+<Disp><![CDATA[SubmitJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T37">
+<AName><![CDATA[CleanUp]]></AName>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Select Jurisdiction from Next step listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:18]]></Time>
+<TimeTick>1618305978</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="50" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Click on Go button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:22]]></Time>
+<TimeTick>1618305982</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="51" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Remove button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:25]]></Time>
+<TimeTick>1618305985</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="52" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Click on Remove button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:28]]></Time>
+<TimeTick>1618305988</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="53" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[6: Click on Continue button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:32]]></Time>
+<TimeTick>1618305992</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="54" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[7: Click on Submit button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:35]]></Time>
+<TimeTick>1618305995</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="55" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[8: Click on Case list link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:37]]></Time>
+<TimeTick>1618305997</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="56" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[9: Click on Reset button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:38]]></Time>
+<TimeTick>1618305998</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="57" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:26:15" eTime="13/04/2021 - 10:26:38" passed="8" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="49" status="Passed" >
+<Disp><![CDATA[CleanUp Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T46">
+<AName><![CDATA[SignOut]]></AName>
+<Step rID="T47">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Sign out link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:40]]></Time>
+<TimeTick>1618306000</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="60" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:26:38" eTime="13/04/2021 - 10:26:43" passed="1" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="59" status="Passed" >
+<Disp><![CDATA[SignOut Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="7" status="Passed" >
+<Disp><![CDATA[005_Jurisdictions_UIPerformanceTestv2 Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T48" iterID="2" >
+<Action rID="T49">
+<AName><![CDATA[Action]]></AName>
+<Summary sTime="13/04/2021 - 10:26:43" eTime="13/04/2021 - 10:26:43" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="64" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T50">
+<AName><![CDATA[LaunchHomePage]]></AName>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA[Navigate]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Navigate to https://manage-case.perf...tform.hmcts.net/ was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:45]]></Time>
+<TimeTick>1618306005</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="67" status="Passed" >
+<Disp><![CDATA[Navigate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Sign in's Visible Text contains Sign in was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:46]]></Time>
+<TimeTick>1618306006</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="68" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:26:43" eTime="13/04/2021 - 10:26:49" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="66" status="Passed" >
+<Disp><![CDATA[LaunchHomePage Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T53">
+<AName><![CDATA[SignIn]]></AName>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.1: Click on Email address textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:26:52]]></Time>
+<TimeTick>1618306012</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="71" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.2: Type ccdloadtest4502@gmail.com in Email address textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:03]]></Time>
+<TimeTick>1618306023</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="72" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.5: Click on Password passwordbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:05]]></Time>
+<TimeTick>1618306025</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="73" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.6: Type ********** in Password passwordbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:11]]></Time>
+<TimeTick>1618306031</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="74" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.7: Click on Sign in button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:14]]></Time>
+<TimeTick>1618306034</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="75" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T59">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.8: Verify Case List's Visible Text contains Case List was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:15]]></Time>
+<TimeTick>1618306035</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="76" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:26:49" eTime="13/04/2021 - 10:27:18" passed="6" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="70" status="Passed" >
+<Disp><![CDATA[SignIn Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T60">
+<AName><![CDATA[SearchCase]]></AName>
+<Step rID="T61">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Select Leeds - Singles from Case type listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:21]]></Time>
+<TimeTick>1618306041</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="79" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Click on Case Number textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:24]]></Time>
+<TimeTick>1618306044</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="80" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Type 181300556 in Case Number textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:27]]></Time>
+<TimeTick>1618306047</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="81" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Apply button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:30]]></Time>
+<TimeTick>1618306050</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="82" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:27:18" eTime="13/04/2021 - 10:27:33" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="78" status="Passed" >
+<Disp><![CDATA[SearchCase Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T65">
+<AName><![CDATA[SelectCase]]></AName>
+<Step rID="T66">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on ArgsContext.LR.getParam(...seNumberSelect") link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:36]]></Time>
+<TimeTick>1618306056</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="85" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Next step's Visible Text contains Next step was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:36]]></Time>
+<TimeTick>1618306056</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="86" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:27:33" eTime="13/04/2021 - 10:27:39" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="84" status="Passed" >
+<Disp><![CDATA[SelectCase Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T68">
+<AName><![CDATA[SelectJurisdiction]]></AName>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Select Jurisdiction from Next step listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:41]]></Time>
+<TimeTick>1618306061</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="89" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Click on Go button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:45]]></Time>
+<TimeTick>1618306065</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="90" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T71">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Verify Jurisdiction's Visible Text contains Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:46]]></Time>
+<TimeTick>1618306066</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="91" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:27:39" eTime="13/04/2021 - 10:27:49" passed="3" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="88" status="Passed" >
+<Disp><![CDATA[SelectJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T72">
+<AName><![CDATA[AddNewJurisdiction]]></AName>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Add new button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:52]]></Time>
+<TimeTick>1618306072</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="94" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T74">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Select ADT from Jurisdiction CodeThis... listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:54]]></Time>
+<TimeTick>1618306074</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="95" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T75">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Select Unsuccessful at hearing from Outcome (Optional) listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:27:57]]></Time>
+<TimeTick>1618306077</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="96" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T76">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Click on Continue button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:01]]></Time>
+<TimeTick>1618306081</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="97" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:27:49" eTime="13/04/2021 - 10:28:05" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="93" status="Passed" >
+<Disp><![CDATA[AddNewJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T77">
+<AName><![CDATA[SubmitJurisdiction]]></AName>
+<Step rID="T78">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Submit button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:08]]></Time>
+<TimeTick>1618306088</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="100" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T79">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:08]]></Time>
+<TimeTick>1618306088</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="101" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T80">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Jurisdictions tab was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:12]]></Time>
+<TimeTick>1618306092</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="102" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T81">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Verify Jurisdiction's Visible Text contains Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:13]]></Time>
+<TimeTick>1618306093</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="103" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:28:05" eTime="13/04/2021 - 10:28:16" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="99" status="Passed" >
+<Disp><![CDATA[SubmitJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T82">
+<AName><![CDATA[CleanUp]]></AName>
+<Step rID="T83">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Select Jurisdiction from Next step listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:18]]></Time>
+<TimeTick>1618306098</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="106" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T84">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Click on Go button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:22]]></Time>
+<TimeTick>1618306102</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="107" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T85">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Remove button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:25]]></Time>
+<TimeTick>1618306105</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="108" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T86">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Click on Remove button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:28]]></Time>
+<TimeTick>1618306108</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="109" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T87">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[6: Click on Continue button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:32]]></Time>
+<TimeTick>1618306112</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="110" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T88">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[7: Click on Submit button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:36]]></Time>
+<TimeTick>1618306116</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="111" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T89">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[8: Click on Case list link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:38]]></Time>
+<TimeTick>1618306118</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="112" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T90">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[9: Click on Reset button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:39]]></Time>
+<TimeTick>1618306119</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="113" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:28:16" eTime="13/04/2021 - 10:28:39" passed="8" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="105" status="Passed" >
+<Disp><![CDATA[CleanUp Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T91">
+<AName><![CDATA[SignOut]]></AName>
+<Step rID="T92">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Sign out link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:41]]></Time>
+<TimeTick>1618306121</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="116" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:28:39" eTime="13/04/2021 - 10:28:44" passed="1" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="115" status="Passed" >
+<Disp><![CDATA[SignOut Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="63" status="Passed" >
+<Disp><![CDATA[005_Jurisdictions_UIPerformanceTestv2 Iteration 2 (Row 2)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T93" iterID="3" >
+<Action rID="T94">
+<AName><![CDATA[Action]]></AName>
+<Summary sTime="13/04/2021 - 10:28:44" eTime="13/04/2021 - 10:28:44" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="120" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T95">
+<AName><![CDATA[LaunchHomePage]]></AName>
+<Step rID="T96">
+<Obj plainTxt="False" ><![CDATA[Navigate]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Navigate to https://manage-case.perf...tform.hmcts.net/ was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:46]]></Time>
+<TimeTick>1618306126</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="123" status="Passed" >
+<Disp><![CDATA[Navigate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T97">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Sign in's Visible Text contains Sign in was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:47]]></Time>
+<TimeTick>1618306127</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="124" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:28:44" eTime="13/04/2021 - 10:28:50" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="122" status="Passed" >
+<Disp><![CDATA[LaunchHomePage Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T98">
+<AName><![CDATA[SignIn]]></AName>
+<Step rID="T99">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.1: Click on Email address textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:28:53]]></Time>
+<TimeTick>1618306133</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="127" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T100">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.2: Type ccdloadtest4503@gmail.com in Email address textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:02]]></Time>
+<TimeTick>1618306142</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="128" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T101">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.5: Click on Password passwordbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:05]]></Time>
+<TimeTick>1618306145</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="129" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T102">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.6: Type ********** in Password passwordbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:10]]></Time>
+<TimeTick>1618306150</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="130" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T103">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.7: Click on Sign in button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:13]]></Time>
+<TimeTick>1618306153</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="131" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T104">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[1.8: Verify Case List's Visible Text contains Case List was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:14]]></Time>
+<TimeTick>1618306154</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="132" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:28:50" eTime="13/04/2021 - 10:29:17" passed="6" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="126" status="Passed" >
+<Disp><![CDATA[SignIn Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T105">
+<AName><![CDATA[SearchCase]]></AName>
+<Step rID="T106">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Select Leeds - Singles from Case type listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:19]]></Time>
+<TimeTick>1618306159</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="135" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T107">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Click on Case Number textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:22]]></Time>
+<TimeTick>1618306162</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="136" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T108">
+<Obj plainTxt="False" ><![CDATA[Type]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Type 181300557 in Case Number textbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:26]]></Time>
+<TimeTick>1618306166</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="137" status="Passed" >
+<Disp><![CDATA[Type]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T109">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Apply button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:28]]></Time>
+<TimeTick>1618306168</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="138" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:29:17" eTime="13/04/2021 - 10:29:31" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="134" status="Passed" >
+<Disp><![CDATA[SearchCase Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T110">
+<AName><![CDATA[SelectCase]]></AName>
+<Step rID="T111">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on ArgsContext.LR.getParam(...seNumberSelect") link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:34]]></Time>
+<TimeTick>1618306174</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="141" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T112">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Next step's Visible Text contains Next step was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:35]]></Time>
+<TimeTick>1618306175</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="142" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:29:31" eTime="13/04/2021 - 10:29:38" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="140" status="Passed" >
+<Disp><![CDATA[SelectCase Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T113">
+<AName><![CDATA[SelectJurisdiction]]></AName>
+<Step rID="T114">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Select Jurisdiction from Next step listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:39]]></Time>
+<TimeTick>1618306179</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="145" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T115">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Click on Go button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:45]]></Time>
+<TimeTick>1618306185</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="146" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T116">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Verify Jurisdiction's Visible Text contains Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:45]]></Time>
+<TimeTick>1618306185</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="147" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:29:38" eTime="13/04/2021 - 10:29:49" passed="3" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="144" status="Passed" >
+<Disp><![CDATA[SelectJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T117">
+<AName><![CDATA[AddNewJurisdiction]]></AName>
+<Step rID="T118">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Add new button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:51]]></Time>
+<TimeTick>1618306191</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="150" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T119">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Select ADT from Jurisdiction CodeThis... listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:54]]></Time>
+<TimeTick>1618306194</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="151" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T120">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Select Unsuccessful at hearing from Outcome (Optional) listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:29:56]]></Time>
+<TimeTick>1618306196</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="152" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T121">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Click on Continue button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:01]]></Time>
+<TimeTick>1618306201</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="153" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:29:49" eTime="13/04/2021 - 10:30:05" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="149" status="Passed" >
+<Disp><![CDATA[AddNewJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T122">
+<AName><![CDATA[SubmitJurisdiction]]></AName>
+<Step rID="T123">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Submit button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:09]]></Time>
+<TimeTick>1618306209</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="156" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T124">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:09]]></Time>
+<TimeTick>1618306209</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="157" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T125">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Jurisdictions tab was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:14]]></Time>
+<TimeTick>1618306214</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="158" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T126">
+<Obj plainTxt="False" ><![CDATA[Verify]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Verify Jurisdiction's Visible Text contains Jurisdiction was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:14]]></Time>
+<TimeTick>1618306214</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="159" status="Passed" >
+<Disp><![CDATA[Verify]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:30:05" eTime="13/04/2021 - 10:30:17" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="155" status="Passed" >
+<Disp><![CDATA[SubmitJurisdiction Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T127">
+<AName><![CDATA[CleanUp]]></AName>
+<Step rID="T128">
+<Obj plainTxt="False" ><![CDATA[Select]]></Obj>
+<Details plainTxt="False" ><![CDATA[2: Select Jurisdiction from Next step listbox was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:19]]></Time>
+<TimeTick>1618306219</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="162" status="Passed" >
+<Disp><![CDATA[Select]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T129">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[3: Click on Go button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:23]]></Time>
+<TimeTick>1618306223</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="163" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T130">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[4: Click on Remove button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:26]]></Time>
+<TimeTick>1618306226</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="164" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T131">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[5: Click on Remove button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:29]]></Time>
+<TimeTick>1618306229</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="165" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T132">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[6: Click on Continue button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:33]]></Time>
+<TimeTick>1618306233</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="166" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T133">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[7: Click on Submit button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:37]]></Time>
+<TimeTick>1618306237</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="167" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T134">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[8: Click on Case list link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:40]]></Time>
+<TimeTick>1618306240</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="168" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T135">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[9: Click on Reset button was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:41]]></Time>
+<TimeTick>1618306241</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="169" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:30:17" eTime="13/04/2021 - 10:30:41" passed="8" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="161" status="Passed" >
+<Disp><![CDATA[CleanUp Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T136">
+<AName><![CDATA[SignOut]]></AName>
+<Step rID="T137">
+<Obj plainTxt="False" ><![CDATA[Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[1: Click on Sign out link was finished]]></Details>
+<Time><![CDATA[13/04/2021 - 10:30:43]]></Time>
+<TimeTick>1618306243</TimeTick>
+<NodeArgs eType="General" icon="0" nRep="172" status="Passed" >
+<Disp><![CDATA[Click]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="13/04/2021 - 10:30:41" eTime="13/04/2021 - 10:30:46" passed="1" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="171" status="Passed" >
+<Disp><![CDATA[SignOut Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="119" status="Passed" >
+<Disp><![CDATA[005_Jurisdictions_UIPerformanceTestv2 Iteration 3 (Row 3)]]></Disp>
+</NodeArgs>
+</DIter>
+<Action rID="T138">
+<AName><![CDATA[End]]></AName>
+<Summary sTime="13/04/2021 - 10:30:47" eTime="13/04/2021 - 10:30:47" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="175" >
+<Disp><![CDATA[End Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Summary sTime="13/04/2021 - 10:24:30" eTime="13/04/2021 - 10:30:47" passed="102" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="4" status="Passed" >
+<Disp><![CDATA[Test 005_Jurisdictions_UIPerformanceTestv2 Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

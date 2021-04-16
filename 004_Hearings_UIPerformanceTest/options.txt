@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Solirius\Documents\VuGen\Scripts\LoadRunner2021\004_Hearings_UIPerformanceTestv9
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\solirius\documents\vugen\scripts\loadrunner2021\004_hearings_uiperformancetestv9\\logfile.log
+c:\users\solirius\documents\vugen\scripts\loadrunner2021\004_hearings_uiperformancetestv9\\combined_004_Hearings_UIPerformanceTestv9.c
+c:\users\solirius\documents\vugen\scripts\loadrunner2021\004_hearings_uiperformancetestv9\\pre_cci.c

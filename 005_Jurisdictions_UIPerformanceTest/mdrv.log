@@ -1,0 +1,343 @@
+Virtual User Script started at : 2021-04-13 10:24:34
+TruClient Replay (build 0248) for LoadRunner Professional 2021.0.0, build 0371. OS: Windows 10, Browser: Chromium 86.0.4240.183, initialized on 2021/04/13 at 10:24:30 (1618305870,427s)
+
+Running Vuser...
+Starting iteration 1.
+Notify: Transaction "005_001_ECM_LaunchHomePage" started.
+t=00011761ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00011766ms: Warning -205179: The TC.getParam API is deprecated because it is synchronous. Use the asynchronous API TCA.getParam instead. For details, see https://admhelp.microfocus.com/tc/en/2021.0.0/Content/TruClient/procedures/Async_API_Example.htm.    [MsgId: MWAR-205179]
+t=00012988ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00012993ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00015279ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 3,5220 Think Time: 0,0020 Wasted Time: 0,6720).
+t=00015283ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00018502ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00018512ms: Step 1: Sign in started    [MsgId: MMSG-205180]
+t=00019019ms: Step 1.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00021247ms: Step 1.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00021764ms: Step 1.2: Type UserName in Email address textbox started    [MsgId: MMSG-205180]
+t=00031170ms: Step 1.2: Type ccdloadtest4501@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00031683ms: Step 1.5: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00033909ms: Step 1.5: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00034411ms: Step 1.6: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+t=00039602ms: Step 1.6: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_002_ECM_SignIn" started.
+t=00040118ms: Step 1.7: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00042410ms: Step 1.7: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00042413ms: Step 1.8: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00043837ms: Step 1.8: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00043841ms: Step 1: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_002_ECM_SignIn" ended with a "Pass" status (Duration: 3,7250 Think Time: 0,0020 Wasted Time: 0,6310).
+t=00043843ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00047053ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00047574ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00049616ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00050130ms: Step 2: Click on Case Number textbox started    [MsgId: MMSG-205180]
+t=00052368ms: Step 2: Click on Case Number textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00052872ms: Step 3: Type CaseNumberSearch in Case Number textbox started    [MsgId: MMSG-205180]
+t=00057067ms: Step 3: Type 181300555 in Case Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_003_ECM_SearchCase" started.
+t=00057584ms: Step 4: Click on Apply button started    [MsgId: MMSG-205180]
+t=00058944ms: Step 4: Click on Apply button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_003_ECM_SearchCase" ended with a "Pass" status (Duration: 1,3620 Wasted Time: 0,3600).
+t=00058947ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00062167ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_004_ECM_SelectCase" started.
+t=00062684ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link started    [MsgId: MMSG-205180]
+t=00064660ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00064664ms: Step 2: Verify Next step's Visible Text contains Next step started    [MsgId: MMSG-205180]
+t=00064879ms: Step 2: Verify Next step's Visible Text contains Next step successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_004_ECM_SelectCase" ended with a "Pass" status (Duration: 2,1970 Think Time: 0,0020 Wasted Time: 0,5780).
+t=00064882ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00068094ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00068605ms: Step 1: Select Jurisdiction from Next step listbox started    [MsgId: MMSG-205180]
+t=00069827ms: Step 1: Select Jurisdiction from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_006_ECM_SelectJuridiction" started.
+t=00070340ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00073802ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00073806ms: Step 3: Verify Jurisdiction's Visible Text contains Jurisdiction started    [MsgId: MMSG-205180]
+t=00074034ms: Step 3: Verify Jurisdiction's Visible Text contains Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_006_ECM_SelectJuridiction" ended with a "Pass" status (Duration: 3,6950 Think Time: 0,0030 Wasted Time: 0,5820).
+t=00074037ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00077242ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_007_ECM_AddNewJurisdiction" started.
+t=00077758ms: Step 1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00079984ms: Step 1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_007_ECM_AddNewJurisdiction" ended with a "Pass" status (Duration: 2,2270 Wasted Time: 1,0740).
+t=00080501ms: Step 3: Select ADT from Jurisdiction CodeThis... listbox started    [MsgId: MMSG-205180]
+t=00082533ms: Step 3: Select ADT from Jurisdiction CodeThis... listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00083048ms: Step 4: Select Unsuccessful at hearing from Outcome (Optional) listbox started    [MsgId: MMSG-205180]
+t=00085088ms: Step 4: Select Unsuccessful at hearing from Outcome (Optional) listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_008_ECM_AddNewJurisdictionContinue" started.
+t=00085603ms: Step 5: Click on Continue button started    [MsgId: MMSG-205180]
+t=00090234ms: Step 5: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_008_ECM_AddNewJurisdictionContinue" ended with a "Pass" status (Duration: 4,6320 Wasted Time: 0,3730).
+t=00090236ms: Step 6: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00093456ms: Step 6: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_009_ECM_SubmitNewJurisdiction" started.
+t=00093975ms: Step 1: Click on Submit button started    [MsgId: MMSG-205180]
+t=00096967ms: Step 1: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00096970ms: Step 2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction started    [MsgId: MMSG-205180]
+t=00097204ms: Step 2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_009_ECM_SubmitNewJurisdiction" ended with a "Pass" status (Duration: 3,2310 Think Time: 0,0020 Wasted Time: 0,5750).
+t=00097206ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00100427ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_010_ECM_JurisdictionTab" started.
+t=00100941ms: Step 4: Click on Jurisdictions tab started    [MsgId: MMSG-205180]
+t=00101754ms: Step 4: Click on Jurisdictions tab successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00101758ms: Step 5: Verify Jurisdiction's Visible Text contains Jurisdiction started    [MsgId: MMSG-205180]
+t=00101986ms: Step 5: Verify Jurisdiction's Visible Text contains Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_010_ECM_JurisdictionTab" ended with a "Pass" status (Duration: 1,0460 Think Time: 0,0030 Wasted Time: 0,5830).
+t=00101988ms: Step 6: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00105202ms: Step 6: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_CleanUp" started.
+t=00105720ms: Step 2: Select Jurisdiction from Next step listbox started    [MsgId: MMSG-205180]
+t=00107773ms: Step 2: Select Jurisdiction from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00108287ms: Step 3: Click on Go button started    [MsgId: MMSG-205180]
+t=00112260ms: Step 3: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00112774ms: Step 4: Click on Remove button started    [MsgId: MMSG-205180]
+t=00115120ms: Step 4: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00115635ms: Step 5: Click on Remove button started    [MsgId: MMSG-205180]
+t=00117878ms: Step 5: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00118395ms: Step 6: Click on Continue button started    [MsgId: MMSG-205180]
+t=00121580ms: Step 6: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00122089ms: Step 7: Click on Submit button started    [MsgId: MMSG-205180]
+t=00124575ms: Step 7: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00125090ms: Step 8: Click on Case list link started    [MsgId: MMSG-205180]
+t=00127032ms: Step 8: Click on Case list link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00127545ms: Step 9: Click on Reset button started    [MsgId: MMSG-205180]
+t=00127969ms: Step 9: Click on Reset button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_CleanUp" ended with a "Pass" status (Duration: 22,2530 Wasted Time: 7,1610).
+Notify: Transaction "005_011_ECM_SignOut" started.
+t=00128488ms: Step 1: Click on Sign out link started    [MsgId: MMSG-205180]
+t=00129833ms: Step 1: Click on Sign out link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_011_ECM_SignOut" ended with a "Pass" status (Duration: 1,3470 Wasted Time: 0,1700).
+t=00129836ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00133055ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Ending iteration 1.
+Starting iteration 2.
+Notify: Transaction "005_001_ECM_LaunchHomePage" started.
+t=00133866ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00134984ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00134986ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00136222ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 2.3580 Think Time: 0.0010 Wasted Time: 0.6640).
+t=00136224ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00139436ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00139446ms: Step 1: Sign in started    [MsgId: MMSG-205180]
+t=00139958ms: Step 1.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00142185ms: Step 1.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00142687ms: Step 1.2: Type UserName in Email address textbox started    [MsgId: MMSG-205180]
+t=00152615ms: Step 1.2: Type ccdloadtest4502@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00153117ms: Step 1.5: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00155337ms: Step 1.5: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00155841ms: Step 1.6: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+t=00160612ms: Step 1.6: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_002_ECM_SignIn" started.
+t=00161127ms: Step 1.7: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00163753ms: Step 1.7: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00163757ms: Step 1.8: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00165192ms: Step 1.8: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00165195ms: Step 1: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_002_ECM_SignIn" ended with a "Pass" status (Duration: 4,0710 Think Time: 0,0030 Wasted Time: 0,6250).
+t=00165197ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00168419ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00168936ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00171150ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00171662ms: Step 2: Click on Case Number textbox started    [MsgId: MMSG-205180]
+t=00173895ms: Step 2: Click on Case Number textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00174412ms: Step 3: Type CaseNumberSearch in Case Number textbox started    [MsgId: MMSG-205180]
+t=00177565ms: Step 3: Type 181300556 in Case Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_003_ECM_SearchCase" started.
+t=00178081ms: Step 4: Click on Apply button started    [MsgId: MMSG-205180]
+t=00179952ms: Step 4: Click on Apply button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_003_ECM_SearchCase" ended with a "Pass" status (Duration: 1,8740 Wasted Time: 0,3610).
+t=00179955ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00183167ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_004_ECM_SelectCase" started.
+t=00183685ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link started    [MsgId: MMSG-205180]
+t=00185861ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00185863ms: Step 2: Verify Next step's Visible Text contains Next step started    [MsgId: MMSG-205180]
+t=00186079ms: Step 2: Verify Next step's Visible Text contains Next step successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_004_ECM_SelectCase" ended with a "Pass" status (Duration: 2,3960 Think Time: 0,0010 Wasted Time: 0,5780).
+t=00186081ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00189298ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00189817ms: Step 1: Select Jurisdiction from Next step listbox started    [MsgId: MMSG-205180]
+t=00190788ms: Step 1: Select Jurisdiction from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_006_ECM_SelectJuridiction" started.
+t=00191299ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00195381ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00195384ms: Step 3: Verify Jurisdiction's Visible Text contains Jurisdiction started    [MsgId: MMSG-205180]
+t=00195613ms: Step 3: Verify Jurisdiction's Visible Text contains Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_006_ECM_SelectJuridiction" ended with a "Pass" status (Duration: 4,3150 Think Time: 0,0010 Wasted Time: 0,5890).
+t=00195615ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00198833ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_007_ECM_AddNewJurisdiction" started.
+t=00199351ms: Step 1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00201585ms: Step 1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_007_ECM_AddNewJurisdiction" ended with a "Pass" status (Duration: 2,2350 Wasted Time: 0,9850).
+t=00202089ms: Step 3: Select ADT from Jurisdiction CodeThis... listbox started    [MsgId: MMSG-205180]
+t=00204129ms: Step 3: Select ADT from Jurisdiction CodeThis... listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00204645ms: Step 4: Select Unsuccessful at hearing from Outcome (Optional) listbox started    [MsgId: MMSG-205180]
+t=00206680ms: Step 4: Select Unsuccessful at hearing from Outcome (Optional) listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_008_ECM_AddNewJurisdictionContinue" started.
+t=00207192ms: Step 5: Click on Continue button started    [MsgId: MMSG-205180]
+t=00211379ms: Step 5: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_008_ECM_AddNewJurisdictionContinue" ended with a "Pass" status (Duration: 4,1880 Wasted Time: 0,3650).
+t=00211381ms: Step 6: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00214598ms: Step 6: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_009_ECM_SubmitNewJurisdiction" started.
+t=00215116ms: Step 1: Click on Submit button started    [MsgId: MMSG-205180]
+t=00217719ms: Step 1: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00217722ms: Step 2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction started    [MsgId: MMSG-205180]
+t=00217954ms: Step 2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_009_ECM_SubmitNewJurisdiction" ended with a "Pass" status (Duration: 2.8400 Think Time: 0.0020 Wasted Time: 0.5850).
+t=00217957ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00221172ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_010_ECM_JurisdictionTab" started.
+t=00221687ms: Step 4: Click on Jurisdictions tab started    [MsgId: MMSG-205180]
+t=00222438ms: Step 4: Click on Jurisdictions tab successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00222442ms: Step 5: Verify Jurisdiction's Visible Text contains Jurisdiction started    [MsgId: MMSG-205180]
+t=00222656ms: Step 5: Verify Jurisdiction's Visible Text contains Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_010_ECM_JurisdictionTab" ended with a "Pass" status (Duration: 0,9720 Think Time: 0,0030 Wasted Time: 0,5780).
+t=00222658ms: Step 6: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00225864ms: Step 6: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_CleanUp" started.
+t=00226382ms: Step 2: Select Jurisdiction from Next step listbox started    [MsgId: MMSG-205180]
+t=00228419ms: Step 2: Select Jurisdiction from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00228935ms: Step 3: Click on Go button started    [MsgId: MMSG-205180]
+t=00232406ms: Step 3: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00232922ms: Step 4: Click on Remove button started    [MsgId: MMSG-205180]
+t=00235154ms: Step 4: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00235671ms: Step 5: Click on Remove button started    [MsgId: MMSG-205180]
+t=00237913ms: Step 5: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00238416ms: Step 6: Click on Continue button started    [MsgId: MMSG-205180]
+t=00242566ms: Step 6: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00243082ms: Step 7: Click on Submit button started    [MsgId: MMSG-205180]
+t=00245783ms: Step 7: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00246286ms: Step 8: Click on Case list link started    [MsgId: MMSG-205180]
+t=00248113ms: Step 8: Click on Case list link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00248613ms: Step 9: Click on Reset button started    [MsgId: MMSG-205180]
+t=00249039ms: Step 9: Click on Reset button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_CleanUp" ended with a "Pass" status (Duration: 22,6590 Wasted Time: 8,7350).
+Notify: Transaction "005_011_ECM_SignOut" started.
+t=00249557ms: Step 1: Click on Sign out link started    [MsgId: MMSG-205180]
+t=00250910ms: Step 1: Click on Sign out link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_011_ECM_SignOut" ended with a "Pass" status (Duration: 1,3540 Wasted Time: 0,1990).
+t=00250912ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00254124ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Ending iteration 2.
+Starting iteration 3.
+Notify: Transaction "005_001_ECM_LaunchHomePage" started.
+t=00254910ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00256084ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00256088ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00257333ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 2.4260 Think Time: 0.0020 Wasted Time: 0.6510).
+t=00257335ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00260545ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00260555ms: Step 1: Sign in started    [MsgId: MMSG-205180]
+t=00261065ms: Step 1.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00263292ms: Step 1.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00263809ms: Step 1.2: Type UserName in Email address textbox started    [MsgId: MMSG-205180]
+t=00272490ms: Step 1.2: Type ccdloadtest4503@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00273005ms: Step 1.5: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00275225ms: Step 1.5: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00275727ms: Step 1.6: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+t=00280211ms: Step 1.6: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_002_ECM_SignIn" started.
+t=00280726ms: Step 1.7: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00282867ms: Step 1.7: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00282870ms: Step 1.8: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00284296ms: Step 1.8: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00284299ms: Step 1: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_002_ECM_SignIn" ended with a "Pass" status (Duration: 3,5750 Think Time: 0,0010 Wasted Time: 0,6220).
+t=00284302ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00287515ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00288032ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00289450ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00289965ms: Step 2: Click on Case Number textbox started    [MsgId: MMSG-205180]
+t=00292192ms: Step 2: Click on Case Number textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00292694ms: Step 3: Type CaseNumberSearch in Case Number textbox started    [MsgId: MMSG-205180]
+t=00295805ms: Step 3: Type 181300557 in Case Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_003_ECM_SearchCase" started.
+t=00296310ms: Step 4: Click on Apply button started    [MsgId: MMSG-205180]
+t=00298144ms: Step 4: Click on Apply button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_003_ECM_SearchCase" ended with a "Pass" status (Duration: 1,8360 Wasted Time: 0,3600).
+t=00298147ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00301368ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_004_ECM_SelectCase" started.
+t=00301882ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link started    [MsgId: MMSG-205180]
+t=00304360ms: Step 1: Click on ArgsContext.LR.getParam(...seNumberSelect") link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00304364ms: Step 2: Verify Next step's Visible Text contains Next step started    [MsgId: MMSG-205180]
+t=00304580ms: Step 2: Verify Next step's Visible Text contains Next step successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_004_ECM_SelectCase" ended with a "Pass" status (Duration: 2,6980 Think Time: 0,0030 Wasted Time: 0,5720).
+t=00304582ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00307800ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00308317ms: Step 1: Select Jurisdiction from Next step listbox started    [MsgId: MMSG-205180]
+t=00309542ms: Step 1: Select Jurisdiction from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_006_ECM_SelectJuridiction" started.
+t=00310053ms: Step 2: Click on Go button started    [MsgId: MMSG-205180]
+t=00315146ms: Step 2: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00315149ms: Step 3: Verify Jurisdiction's Visible Text contains Jurisdiction started    [MsgId: MMSG-205180]
+t=00315380ms: Step 3: Verify Jurisdiction's Visible Text contains Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_006_ECM_SelectJuridiction" ended with a "Pass" status (Duration: 5,3280 Think Time: 0,0020 Wasted Time: 0,5910).
+t=00315382ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00318590ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_007_ECM_AddNewJurisdiction" started.
+t=00319106ms: Step 1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00321343ms: Step 1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_007_ECM_AddNewJurisdiction" ended with a "Pass" status (Duration: 2,2390 Wasted Time: 0,4430).
+t=00321860ms: Step 3: Select ADT from Jurisdiction CodeThis... listbox started    [MsgId: MMSG-205180]
+t=00323902ms: Step 3: Select ADT from Jurisdiction CodeThis... listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00324417ms: Step 4: Select Unsuccessful at hearing from Outcome (Optional) listbox started    [MsgId: MMSG-205180]
+t=00326454ms: Step 4: Select Unsuccessful at hearing from Outcome (Optional) listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_008_ECM_AddNewJurisdictionContinue" started.
+t=00326968ms: Step 5: Click on Continue button started    [MsgId: MMSG-205180]
+t=00331473ms: Step 5: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_008_ECM_AddNewJurisdictionContinue" ended with a "Pass" status (Duration: 4,5080 Wasted Time: 0,3640).
+t=00331476ms: Step 6: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00334681ms: Step 6: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_009_ECM_SubmitNewJurisdiction" started.
+t=00335196ms: Step 1: Click on Submit button started    [MsgId: MMSG-205180]
+t=00339098ms: Step 1: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00339102ms: Step 2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction started    [MsgId: MMSG-205180]
+t=00339331ms: Step 2: Verify Case #1618 2376 0307...'s Visible Text contains has been updated with event: Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_009_ECM_SubmitNewJurisdiction" ended with a "Pass" status (Duration: 4,1360 Think Time: 0,0020 Wasted Time: 0,5780).
+t=00339333ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00342551ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_010_ECM_JurisdictionTab" started.
+t=00343066ms: Step 4: Click on Jurisdictions tab started    [MsgId: MMSG-205180]
+t=00343853ms: Step 4: Click on Jurisdictions tab successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00343856ms: Step 5: Verify Jurisdiction's Visible Text contains Jurisdiction started    [MsgId: MMSG-205180]
+t=00344073ms: Step 5: Verify Jurisdiction's Visible Text contains Jurisdiction successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_010_ECM_JurisdictionTab" ended with a "Pass" status (Duration: 1,0090 Think Time: 0,0020 Wasted Time: 0,5830).
+t=00344075ms: Step 6: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00347281ms: Step 6: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_CleanUp" started.
+t=00347795ms: Step 2: Select Jurisdiction from Next step listbox started    [MsgId: MMSG-205180]
+t=00348689ms: Step 2: Select Jurisdiction from Next step listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00349204ms: Step 3: Click on Go button started    [MsgId: MMSG-205180]
+t=00353405ms: Step 3: Click on Go button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00353921ms: Step 4: Click on Remove button started    [MsgId: MMSG-205180]
+t=00356145ms: Step 4: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00356659ms: Step 5: Click on Remove button started    [MsgId: MMSG-205180]
+t=00358892ms: Step 5: Click on Remove button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00359406ms: Step 6: Click on Continue button started    [MsgId: MMSG-205180]
+t=00363022ms: Step 6: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00363538ms: Step 7: Click on Submit button started    [MsgId: MMSG-205180]
+t=00366950ms: Step 7: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00367453ms: Step 8: Click on Case list link started    [MsgId: MMSG-205180]
+t=00370473ms: Step 8: Click on Case list link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00370986ms: Step 9: Click on Reset button started    [MsgId: MMSG-205180]
+t=00371389ms: Step 9: Click on Reset button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_CleanUp" ended with a "Pass" status (Duration: 23,5950 Wasted Time: 7,6470).
+Notify: Transaction "005_011_ECM_SignOut" started.
+t=00371897ms: Step 1: Click on Sign out link started    [MsgId: MMSG-205180]
+t=00373348ms: Step 1: Click on Sign out link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "005_011_ECM_SignOut" ended with a "Pass" status (Duration: 1,4510 Wasted Time: 0,1960).
+t=00373350ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00376567ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Ending iteration 3.
+Ending Vuser...
+Vuser Terminated.

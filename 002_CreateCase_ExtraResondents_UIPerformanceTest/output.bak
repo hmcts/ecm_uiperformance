@@ -1,0 +1,1033 @@
+Virtual User Script started at : 2021-04-08 10:24:23
+TruClient Replay (build 0248) for LoadRunner Professional 2021.0.0, build 0371. OS: Windows 10, Browser: Chromium 86.0.4240.183, initialized on 2021/04/08 at 10:24:19 (1617873859,328s)
+Selected Run-Time Settings:
+    Simulate a new user on each iteration...............: 1
+    Using system proxy settings
+    Check for newer versions of stored pages: 4 (Automatically)
+    Keep-Alive..........................................: 1
+    Proxy Keep-Alive....................................: 1
+    Keep-Alive timeout (ms).............................: 60000
+    HTTP Version........................................: 1.1
+    Proxy HTTP Version..................................: 1.1
+    DNS cache entries...................................: 20
+    Run-Time Settings file..............................: "C:\Users\Solirius\Documents\VuGen\Scripts\LoadRunner2021\002_CreateCase_ExtraResondents_UIPerformanceTestv4\\default.cfg"
+    Vuser directory.....................................: "C:\Users\Solirius\AppData\Local\Temp\TC\Temp\"
+    Vuser output directory..............................: "C:\Users\Solirius\AppData\Local\Temp\TC\Temp\"
+End of selected Run-Time Settings
+Please refer to the ReadMe file in the LoadRunner Professional installation directory for notes about measurements and logging
+Running Vuser...
+Starting iteration 1.
+Notify: Transaction "002_001_ECM_LaunchHomePage" started.
+t=00005147ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00005151ms: Warning -205179: The TC.getParam API is deprecated because it is synchronous. Use the asynchronous API TCA.getParam instead. For details, see https://admhelp.microfocus.com/tc/en/2021.0.0/Content/TruClient/procedures/Async_API_Example.htm.    [MsgId: MWAR-205179]
+t=00006860ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00006872ms: Step 1: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00009118ms: Step 1: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 3,9760 Think Time: 0,0030 Wasted Time: 0,6630).
+t=00009121ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00012334ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00012336ms: Step 3: Sign in started    [MsgId: MMSG-205180]
+t=00012853ms: Step 3.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00015079ms: Step 3.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00015595ms: Step 3.2: Type Users in Email address textbox started    [MsgId: MMSG-205180]
+t=00024567ms: Step 3.2: Type ccdloadtest4501@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00025083ms: Step 3.3: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00027314ms: Step 3.3: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00027816ms: Step 3.4: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 1 [table  = Password].
+t=00031336ms: Step 3.4: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" started.
+t=00031849ms: Step 3.5: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00034250ms: Step 3.5: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00034253ms: Step 3: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00034257ms: Step 4: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00035712ms: Step 4: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" ended with a "Pass" status (Duration: 3,8650 Think Time: 0,0030 Wasted Time: 0,6180).
+t=00035716ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00038926ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00038939ms: Step 1: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00039161ms: Step 1: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_003_ECM_SelectCreateCase" started.
+t=00039677ms: Step 2: Click on Create case link started    [MsgId: MMSG-205180]
+t=00040339ms: Step 2: Click on Create case link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_003_ECM_SelectCreateCase" ended with a "Pass" status (Duration: 0,6630 Wasted Time: 0,1640).
+t=00040342ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00043558ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00044077ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00045257ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00045772ms: Step 2: Select Create Case from Event listbox started    [MsgId: MMSG-205180]
+t=00047795ms: Step 2: Select Create Case from Event listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_004_ECM_CreateCaseClickStart" started.
+t=00048311ms: Step 3: Click on Start button started    [MsgId: MMSG-205180]
+t=00052994ms: Step 3: Click on Start button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_004_ECM_CreateCaseClickStart" ended with a "Pass" status (Duration: 4,6840 Wasted Time: 0,3670).
+t=00052997ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00056220ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00056231ms: Step 1: Verify Date of Receipt's Visible Text contains Date of Receipt started    [MsgId: MMSG-205180]
+t=00056458ms: Step 1: Verify Date of Receipt's Visible Text contains Date of Receipt successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00056460ms: Step 2: Continue started    [MsgId: MMSG-205180]
+t=00056966ms: Step 2.1: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00059195ms: Step 2.1: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00059699ms: Step 2.2: Type 25 in Day textbox started    [MsgId: MMSG-205180]
+t=00060415ms: Step 2.2: Type 25 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00060929ms: Step 2.3: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00062194ms: Step 2.3: Type 03 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00062697ms: Step 2.4: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00064121ms: Step 2.4: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00064636ms: Step 2.5: Click on Submission ReferenceSubmission... textbox started    [MsgId: MMSG-205180]
+t=00066861ms: Step 2.5: Click on Submission ReferenceSubmission... textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00067376ms: Step 2.6: Type 001001001001 in Submission ReferenceSubmission... textbox started    [MsgId: MMSG-205180]
+t=00072414ms: Step 2.6: Type 001001001001 in Submission ReferenceSubmission... textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_005_ECM_CreateCase_RefSubmission" started.
+t=00072918ms: Step 2.7: Click on Continue button started    [MsgId: MMSG-205180]
+t=00076593ms: Step 2.7: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_005_ECM_CreateCase_RefSubmission" ended with a "Pass" status (Duration: 3,6770 Wasted Time: 0,3790).
+t=00076596ms: Step 2: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00076598ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00079817ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00079827ms: Step 1: Verify Type of claimant's Visible Text contains Type of claimant started    [MsgId: MMSG-205180]
+t=00080052ms: Step 1: Verify Type of claimant's Visible Text contains Type of claimant successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00080056ms: Step 2: Continue started    [MsgId: MMSG-205180]
+t=00080569ms: Step 2.1: Select Mr from Title (Optional) listbox started    [MsgId: MMSG-205180]
+t=00080595ms: Step 2.1: Select Mr from Title (Optional) listbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00081100ms: Step 2.2: Click on First Name textbox started    [MsgId: MMSG-205180]
+t=00081317ms: Step 2.2: Click on First Name textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00081829ms: Step 2.3: Type UI in First Name textbox started    [MsgId: MMSG-205180]
+t=00083147ms: Step 2.3: Type UI in First Name textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00083663ms: Step 2.4: Type PerfTest001 in Last Name textbox started    [MsgId: MMSG-205180]
+t=00088515ms: Step 2.4: Type PerfTest001 in Last Name textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00089030ms: Step 2.5: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00089265ms: Step 2.5: Click on Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00089768ms: Step 2.6: Type 01 in Day textbox started    [MsgId: MMSG-205180]
+t=00090752ms: Step 2.6: Type 01 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00091266ms: Step 2.7: Type 01 in Month textbox started    [MsgId: MMSG-205180]
+t=00092202ms: Step 2.7: Type 01 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00092717ms: Step 2.8: Type 2000 in Year textbox started    [MsgId: MMSG-205180]
+t=00094150ms: Step 2.8: Type 2000 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00094659ms: Step 2.9: Select Male from Gender (Optional) listbox started    [MsgId: MMSG-205180]
+t=00094690ms: Step 2.9: Select Male from Gender (Optional) listbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00095205ms: Step 2.10: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00095439ms: Step 2.10: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00095955ms: Step 2.11: Type sw1h9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00098900ms: Step 2.11: Type sw1h9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00099405ms: Step 2.12: Click on Find address button started    [MsgId: MMSG-205180]
+t=00101828ms: Step 2.12: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00102331ms: Step 2.13: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+t=00102363ms: Step 2.13: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_006_ECM_CreateCasePersonalDetailsContinue" started.
+t=00102880ms: Step 2.14: Click on Continue button started    [MsgId: MMSG-205180]
+t=00106578ms: Step 2.14: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_006_ECM_CreateCasePersonalDetailsContinue" ended with a "Pass" status (Duration: 3,7000 Wasted Time: 0,3760).
+t=00106581ms: Step 2: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00106584ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00109794ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00109803ms: Step 1: Verify Respondents's Visible Text contains Respondents started    [MsgId: MMSG-205180]
+t=00110027ms: Step 1: Verify Respondents's Visible Text contains Respondents successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00110029ms: Step 2: For (var i = 0; i < 24; i++) started    [MsgId: MMSG-205180]
+t=00110035ms: Step 2: For loop iteration number 1 started    [MsgId: MMSG-205180]
+t=00110038ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00110545ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00111640ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00112157ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00122546ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00123065ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '1'.
+t=00123299ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00123801ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00128358ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00128861ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00129080ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00129583ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00132406ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00132917ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '1'.
+t=00134218ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00134733ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '1'.
+t=00136773ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00136775ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00136779ms: Step 2: For loop iteration number 1 ended    [MsgId: MMSG-205180]
+t=00136782ms: Step 2: For loop iteration number 2 started    [MsgId: MMSG-205180]
+t=00136785ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00137288ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00139718ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00140222ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00149760ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00150276ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 2 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '2'.
+t=00150513ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00151025ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00154567ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00155080ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00155333ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00155847ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00158879ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00159393ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 2 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '2'.
+t=00161636ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00162141ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 2 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '2'.
+t=00164192ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00164195ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00164198ms: Step 2: For loop iteration number 2 ended    [MsgId: MMSG-205180]
+t=00164207ms: Step 2: For loop iteration number 3 started    [MsgId: MMSG-205180]
+t=00164207ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00164722ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00166959ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00167476ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00176740ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00177255ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 3 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '3'.
+t=00177489ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00178004ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00183400ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00183916ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00184183ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00184698ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00188522ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00189040ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 3 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '3'.
+t=00190051ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00190555ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 3 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '3'.
+t=00192602ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00192604ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00192608ms: Step 2: For loop iteration number 3 ended    [MsgId: MMSG-205180]
+t=00192612ms: Step 2: For loop iteration number 4 started    [MsgId: MMSG-205180]
+t=00192616ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00193132ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00195357ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00195875ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00205098ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00205615ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 4 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '4'.
+t=00205849ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00206366ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00210863ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00211365ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00211613ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00212128ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00215033ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00215547ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 4 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '4'.
+t=00216943ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00217459ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 4 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '4'.
+t=00219510ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00219513ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00219515ms: Step 2: For loop iteration number 4 ended    [MsgId: MMSG-205180]
+t=00219519ms: Step 2: For loop iteration number 5 started    [MsgId: MMSG-205180]
+t=00219521ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00220038ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00222285ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00222801ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00232281ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00232795ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 5 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '5'.
+t=00233030ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00233544ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00237000ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00237502ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00237752ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00238267ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00241462ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00241965ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 5 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '5'.
+t=00244252ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00244755ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 5 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '5'.
+t=00246830ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00246835ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00246840ms: Step 2: For loop iteration number 5 ended    [MsgId: MMSG-205180]
+t=00246849ms: Step 2: For loop iteration number 6 started    [MsgId: MMSG-205180]
+t=00246851ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00247359ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00249610ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00250125ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00261391ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00261902ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 6 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '6'.
+t=00262155ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00262671ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00266999ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00267511ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00267761ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00268277ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00271190ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00271706ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 6 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '6'.
+t=00273076ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00273593ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 6 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '6'.
+t=00275660ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00275663ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00275665ms: Step 2: For loop iteration number 6 ended    [MsgId: MMSG-205180]
+t=00275669ms: Step 2: For loop iteration number 7 started    [MsgId: MMSG-205180]
+t=00275673ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00276189ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00278435ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00278951ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00289526ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00290030ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 7 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '7'.
+t=00290267ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00290772ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00294952ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00295468ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00295719ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00296235ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00299354ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00299856ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 7 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '7'.
+t=00301055ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00301558ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 7 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '7'.
+t=00303625ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00303628ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00303630ms: Step 2: For loop iteration number 7 ended    [MsgId: MMSG-205180]
+t=00303633ms: Step 2: For loop iteration number 8 started    [MsgId: MMSG-205180]
+t=00303637ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00304142ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00306384ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00306901ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00318378ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00318881ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 8 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '8'.
+t=00319134ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00319648ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00324313ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00324827ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00325080ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00325585ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00328539ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00329054ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 8 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '8'.
+t=00331325ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00331827ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 8 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '8'.
+t=00333888ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00333891ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00333894ms: Step 2: For loop iteration number 8 ended    [MsgId: MMSG-205180]
+t=00333898ms: Step 2: For loop iteration number 9 started    [MsgId: MMSG-205180]
+t=00333900ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00334404ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00336645ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00337162ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00347855ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00348359ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 9 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '9'.
+t=00348611ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00349125ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00354074ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00354579ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00354831ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00355347ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00358445ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00358948ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 9 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '9'.
+t=00359964ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00360466ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 9 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '9'.
+t=00362540ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00362542ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00362544ms: Step 2: For loop iteration number 9 ended    [MsgId: MMSG-205180]
+t=00362548ms: Step 2: For loop iteration number 10 started    [MsgId: MMSG-205180]
+t=00362551ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00363067ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00365311ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00365812ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00375956ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00376469ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 10 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '10'.
+t=00376721ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00377237ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00382321ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00382838ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00383089ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00383601ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00387176ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00387691ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 10 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '10'.
+t=00389390ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00389907ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 10 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '10'.
+t=00391996ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00392000ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00392003ms: Step 2: For loop iteration number 10 ended    [MsgId: MMSG-205180]
+t=00392007ms: Step 2: For loop iteration number 11 started    [MsgId: MMSG-205180]
+t=00392010ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00392522ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00394775ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00395291ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00406615ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00407119ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 11 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '11'.
+t=00407370ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00407883ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00412959ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00413470ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00413724ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00414237ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00417141ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00417656ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 11 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '11'.
+t=00419940ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00420441ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 11 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '11'.
+t=00422530ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00422532ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00422536ms: Step 2: For loop iteration number 11 ended    [MsgId: MMSG-205180]
+t=00422540ms: Step 2: For loop iteration number 12 started    [MsgId: MMSG-205180]
+t=00422544ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00423045ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00425301ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00425804ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00436156ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00436672ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 12 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '12'.
+t=00436921ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00437427ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00443553ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00444056ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00444308ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00444822ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00447916ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00448419ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 12 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '12'.
+t=00449416ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00449920ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 12 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '12'.
+t=00452004ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00452006ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00452008ms: Step 2: For loop iteration number 12 ended    [MsgId: MMSG-205180]
+t=00452012ms: Step 2: For loop iteration number 13 started    [MsgId: MMSG-205180]
+t=00452016ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00452535ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00454778ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00455294ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00463577ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00464090ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 13 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '13'.
+t=00464342ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00464846ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00469996ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00470499ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00470750ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00471262ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00474076ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00474579ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 13 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '13'.
+t=00476056ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00476559ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 13 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '13'.
+t=00478647ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00478651ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00478655ms: Step 2: For loop iteration number 13 ended    [MsgId: MMSG-205180]
+t=00478659ms: Step 2: For loop iteration number 14 started    [MsgId: MMSG-205180]
+t=00478662ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00479165ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00481414ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00481930ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00492578ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00493096ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 14 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '14'.
+t=00493347ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00493857ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00498895ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00499408ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00499672ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00500188ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00504170ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00504671ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 14 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '14'.
+t=00506952ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00507455ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 14 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '14'.
+t=00509546ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00509550ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00509553ms: Step 2: For loop iteration number 14 ended    [MsgId: MMSG-205180]
+t=00509556ms: Step 2: For loop iteration number 15 started    [MsgId: MMSG-205180]
+t=00509560ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00510075ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00512335ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00512850ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00523306ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00523808ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 15 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '15'.
+t=00524060ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00524575ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00529045ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00529559ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00529826ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00530341ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00533050ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00533567ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 15 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '15'.
+t=00534949ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00535464ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 15 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '15'.
+t=00537551ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00537554ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00537558ms: Step 2: For loop iteration number 15 ended    [MsgId: MMSG-205180]
+t=00537561ms: Step 2: For loop iteration number 16 started    [MsgId: MMSG-205180]
+t=00537565ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00538081ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00540336ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00540851ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00550976ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00551490ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 16 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '16'.
+t=00551741ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00552244ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00557421ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00557934ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00558201ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00558705ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00561415ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00561918ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 16 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '16'.
+t=00563156ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00563668ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 16 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '16'.
+t=00565767ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00565771ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00565775ms: Step 2: For loop iteration number 16 ended    [MsgId: MMSG-205180]
+t=00565778ms: Step 2: For loop iteration number 17 started    [MsgId: MMSG-205180]
+t=00565782ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00566296ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00568725ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00569227ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00579358ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00579863ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 17 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '17'.
+t=00580112ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00580629ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00585151ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00585667ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00585934ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00586436ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00590585ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00591087ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 17 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '17'.
+t=00593371ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00593873ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 17 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '17'.
+t=00595979ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00595983ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00595986ms: Step 2: For loop iteration number 17 ended    [MsgId: MMSG-205180]
+t=00595990ms: Step 2: For loop iteration number 18 started    [MsgId: MMSG-205180]
+t=00595993ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00596495ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00598751ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00599259ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00609023ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00609526ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 18 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '18'.
+t=00609777ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00610279ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00616103ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00616617ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00616884ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00617386ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00620295ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00620799ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 18 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '18'.
+t=00622263ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00622776ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 18 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '18'.
+t=00624871ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00624874ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00624877ms: Step 2: For loop iteration number 18 ended    [MsgId: MMSG-205180]
+t=00624881ms: Step 2: For loop iteration number 19 started    [MsgId: MMSG-205180]
+t=00624884ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00625399ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00627642ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00628154ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00638087ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00638601ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 19 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '19'.
+t=00638853ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00639370ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00644477ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00644993ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00645259ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00645774ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00649179ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00649681ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 19 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '19'.
+t=00651120ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00651630ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 19 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '19'.
+t=00653730ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00653732ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00653735ms: Step 2: For loop iteration number 19 ended    [MsgId: MMSG-205180]
+t=00653739ms: Step 2: For loop iteration number 20 started    [MsgId: MMSG-205180]
+t=00653742ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00654244ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00656504ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00657006ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00667972ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00668477ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 20 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '20'.
+t=00668745ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00669261ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00673457ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00673974ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00674256ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00674760ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00677882ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00678399ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 20 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '20'.
+t=00680695ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00681211ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 20 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '20'.
+t=00683314ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00683316ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00683319ms: Step 2: For loop iteration number 20 ended    [MsgId: MMSG-205180]
+t=00683323ms: Step 2: For loop iteration number 21 started    [MsgId: MMSG-205180]
+t=00683326ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00683841ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00686089ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00686602ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00697750ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00698267ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 21 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '21'.
+t=00698533ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00699035ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00703852ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00704368ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00704636ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00705152ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00708218ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00708732ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 21 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '21'.
+t=00710160ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00710677ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 21 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '21'.
+t=00712797ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00712799ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00712803ms: Step 2: For loop iteration number 21 ended    [MsgId: MMSG-205180]
+t=00712808ms: Step 2: For loop iteration number 22 started    [MsgId: MMSG-205180]
+t=00712811ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00713313ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00715724ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00716251ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00726276ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00726778ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 22 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '22'.
+t=00727046ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00727561ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00731987ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00732489ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00732771ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00733287ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00735911ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00736423ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 22 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '22'.
+t=00737891ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00738407ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 22 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '22'.
+t=00740555ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00740558ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00740561ms: Step 2: For loop iteration number 22 ended    [MsgId: MMSG-205180]
+t=00740565ms: Step 2: For loop iteration number 23 started    [MsgId: MMSG-205180]
+t=00740569ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00741082ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00743337ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00743852ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00754272ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00754775ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 23 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '23'.
+t=00755040ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00755555ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00760650ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00761155ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00761436ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00761942ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00765333ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00765835ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 23 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '23'.
+t=00768130ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00768635ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 23 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '23'.
+t=00770762ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00770764ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00770766ms: Step 2: For loop iteration number 23 ended    [MsgId: MMSG-205180]
+t=00770770ms: Step 2: For loop iteration number 24 started    [MsgId: MMSG-205180]
+t=00770773ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00771279ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00773733ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00774235ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00785256ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00785759ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 24 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '24'.
+t=00786042ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00786555ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00792005ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00792511ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00792793ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00793308ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00797017ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00797520ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 24 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '24'.
+t=00798982ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00799497ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 24 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '24'.
+t=00801618ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00801621ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00801625ms: Step 2: For loop iteration number 24 ended    [MsgId: MMSG-205180]
+t=00801629ms: Step 2: For (var i = 0; i < 24; i++) successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_007_ECM_CreateCaseRespondentContinue" started.
+t=00802140ms: Step 3: Click on Continue button started    [MsgId: MMSG-205180]
+t=00810191ms: Step 3: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00810203ms: Step 1: Verify Is this the same as the...'s Visible Text contains Is this the same as the ...'s work address? started    [MsgId: MMSG-205180]
+t=00810427ms: Step 1: Verify Is this the same as the...'s Visible Text contains Is this the same as the ...'s work address? successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_007_ECM_CreateCaseRespondentContinue" ended with a "Pass" status (Duration: 8,2890 Think Time: 0,0040 Wasted Time: 0,5780).
+t=00810429ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00813651ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00814167ms: Step 3: Click on Yes  started    [MsgId: MMSG-205180]
+t=00815311ms: Step 3: Click on Yes  successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00815824ms: Step 4: Select Mr UI PerformanceTester0..., United Kingdom from Please select the Respondent... listbox started    [MsgId: MMSG-205180]
+t=00817876ms: Step 4: Select Mr UI PerformanceTester0..., United Kingdom from Please select the Respondent... listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00817878ms: Step 5: Continue started    [MsgId: MMSG-205180]
+t=00818387ms: Step 5.1: Click on Continue button started    [MsgId: MMSG-205180]
+t=00821036ms: Step 5.1: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00821538ms: Step 5.2: Click on Continue button started    [MsgId: MMSG-205180]
+t=00824834ms: Step 5.2: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00825349ms: Step 5.3: Click on No  started    [MsgId: MMSG-205180]
+t=00825570ms: Step 5.3: Click on No  successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00826072ms: Step 5.4: Click on Continue button started    [MsgId: MMSG-205180]
+t=00832676ms: Step 5.4: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00832679ms: Step 5: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_008_ECM_CreateCaseSubmit" started.
+t=00833193ms: Step 6: Click on Submit button started    [MsgId: MMSG-205180]
+t=00840690ms: Step 6: Click on Submit button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_008_ECM_CreateCaseSubmit" ended with a "Pass" status (Duration: 7,4990 Wasted Time: 0,3710).
+t=00840693ms: Step 7: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00843910ms: Step 7: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_009_ECM_CreateCaseSignOut" started.
+t=00844428ms: Step 1: Click on Sign out link started    [MsgId: MMSG-205180]
+t=00846137ms: Step 1: Click on Sign out link successfully completed with End Event "Document Loaded"    [MsgId: MMSG-205180]
+t=00846141ms: Step 2: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00846371ms: Step 2: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_009_ECM_CreateCaseSignOut" ended with a "Pass" status (Duration: 1,9450 Think Time: 0,0030 Wasted Time: 0,2630).
+Ending iteration 1.
+Starting iteration 2.
+Notify: Next row for parameter Users = 2 [table  = Users].
+Notify: Getting new value for parameter 'Users': table = 'Users.dat' column = '0' row = '2'.
+Notify: Next row for parameter NewParam_1 = 1 [table  = NewParam_1].
+Notify: Getting new value for parameter 'NewParam_1': table = 'NewParam_1.dat' column = '0' row = '1'.
+Notify: Next row for parameter URL = 1 [table  = URL].
+Notify: Getting new value for parameter 'URL': table = 'URL.dat' column = '0' row = '1'.
+Notify: Next row for parameter Password = 2 [table  = Password].
+Notify: Getting new value for parameter 'Password': table = 'Users.dat' column = '1' row = '2'.
+Notify: Transaction "002_001_ECM_LaunchHomePage" started.
+t=00847229ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=00848268ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00848276ms: Step 1: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=00850540ms: Step 1: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 3,3120 Think Time: 0,0020 Wasted Time: 0,6590).
+t=00850542ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00853755ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00853758ms: Step 3: Sign in started    [MsgId: MMSG-205180]
+t=00854271ms: Step 3.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=00856498ms: Step 3.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00857002ms: Step 3.2: Type Users in Email address textbox started    [MsgId: MMSG-205180]
+t=00866724ms: Step 3.2: Type ccdloadtest4502@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00867227ms: Step 3.3: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=00869465ms: Step 3.3: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00869982ms: Step 3.4: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 2 [table  = Password].
+t=00874485ms: Step 3.4: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" started.
+t=00874988ms: Step 3.5: Click on Sign in button started    [MsgId: MMSG-205180]
+t=00877197ms: Step 3.5: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00877201ms: Step 3: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00877204ms: Step 4: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00878586ms: Step 4: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" ended with a "Pass" status (Duration: 3,6000 Think Time: 0,0020 Wasted Time: 0,6300).
+t=00878589ms: Step 5: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00881800ms: Step 5: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00881809ms: Step 1: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=00882035ms: Step 1: Verify Case List's Visible Text contains Case List successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_003_ECM_SelectCreateCase" started.
+t=00882537ms: Step 2: Click on Create case link started    [MsgId: MMSG-205180]
+t=00883210ms: Step 2: Click on Create case link successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_003_ECM_SelectCreateCase" ended with a "Pass" status (Duration: 0,6740 Wasted Time: 0,1710).
+t=00883212ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00886429ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00886946ms: Step 1: Select Leeds - Singles from Case type listbox started    [MsgId: MMSG-205180]
+t=00888250ms: Step 1: Select Leeds - Singles from Case type listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00888765ms: Step 2: Select Create Case from Event listbox started    [MsgId: MMSG-205180]
+t=00890797ms: Step 2: Select Create Case from Event listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_004_ECM_CreateCaseClickStart" started.
+t=00891300ms: Step 3: Click on Start button started    [MsgId: MMSG-205180]
+t=00898672ms: Step 3: Click on Start button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_004_ECM_CreateCaseClickStart" ended with a "Pass" status (Duration: 7,3730 Wasted Time: 0,3600).
+t=00898674ms: Step 4: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00901886ms: Step 4: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00901895ms: Step 1: Verify Date of Receipt's Visible Text contains Date of Receipt started    [MsgId: MMSG-205180]
+t=00902124ms: Step 1: Verify Date of Receipt's Visible Text contains Date of Receipt successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00902126ms: Step 2: Continue started    [MsgId: MMSG-205180]
+t=00902630ms: Step 2.1: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00904862ms: Step 2.1: Click on Day textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00905377ms: Step 2.2: Type 25 in Day textbox started    [MsgId: MMSG-205180]
+t=00906346ms: Step 2.2: Type 25 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00906855ms: Step 2.3: Type 03 in Month textbox started    [MsgId: MMSG-205180]
+t=00907436ms: Step 2.3: Type 03 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00907940ms: Step 2.4: Type 2021 in Year textbox started    [MsgId: MMSG-205180]
+t=00909160ms: Step 2.4: Type 2021 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00909673ms: Step 2.5: Click on Submission ReferenceSubmission... textbox started    [MsgId: MMSG-205180]
+t=00912151ms: Step 2.5: Click on Submission ReferenceSubmission... textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00912667ms: Step 2.6: Type 001001001001 in Submission ReferenceSubmission... textbox started    [MsgId: MMSG-205180]
+t=00917646ms: Step 2.6: Type 001001001001 in Submission ReferenceSubmission... textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_005_ECM_CreateCase_RefSubmission" started.
+t=00918148ms: Step 2.7: Click on Continue button started    [MsgId: MMSG-205180]
+t=00920415ms: Step 2.7: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_005_ECM_CreateCase_RefSubmission" ended with a "Pass" status (Duration: 2,2690 Wasted Time: 0,3670).
+t=00920418ms: Step 2: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00920421ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00923642ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00923651ms: Step 1: Verify Type of claimant's Visible Text contains Type of claimant started    [MsgId: MMSG-205180]
+t=00923877ms: Step 1: Verify Type of claimant's Visible Text contains Type of claimant successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00923879ms: Step 2: Continue started    [MsgId: MMSG-205180]
+t=00924394ms: Step 2.1: Select Mr from Title (Optional) listbox started    [MsgId: MMSG-205180]
+t=00924421ms: Step 2.1: Select Mr from Title (Optional) listbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00924927ms: Step 2.2: Click on First Name textbox started    [MsgId: MMSG-205180]
+t=00925146ms: Step 2.2: Click on First Name textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00925653ms: Step 2.3: Type UI in First Name textbox started    [MsgId: MMSG-205180]
+t=00926523ms: Step 2.3: Type UI in First Name textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00927039ms: Step 2.4: Type PerfTest001 in Last Name textbox started    [MsgId: MMSG-205180]
+t=00932039ms: Step 2.4: Type PerfTest001 in Last Name textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00932553ms: Step 2.5: Click on Day textbox started    [MsgId: MMSG-205180]
+t=00932790ms: Step 2.5: Click on Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00933293ms: Step 2.6: Type 01 in Day textbox started    [MsgId: MMSG-205180]
+t=00934210ms: Step 2.6: Type 01 in Day textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00934724ms: Step 2.7: Type 01 in Month textbox started    [MsgId: MMSG-205180]
+t=00935942ms: Step 2.7: Type 01 in Month textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00936456ms: Step 2.8: Type 2000 in Year textbox started    [MsgId: MMSG-205180]
+t=00937878ms: Step 2.8: Type 2000 in Year textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00938380ms: Step 2.9: Select Male from Gender (Optional) listbox started    [MsgId: MMSG-205180]
+t=00938409ms: Step 2.9: Select Male from Gender (Optional) listbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00938925ms: Step 2.10: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00939159ms: Step 2.10: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00939673ms: Step 2.11: Type sw1h9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00942151ms: Step 2.11: Type sw1h9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00942667ms: Step 2.12: Click on Find address button started    [MsgId: MMSG-205180]
+t=00944887ms: Step 2.12: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00945402ms: Step 2.13: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+t=00945428ms: Step 2.13: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_006_ECM_CreateCasePersonalDetailsContinue" started.
+t=00945934ms: Step 2.14: Click on Continue button started    [MsgId: MMSG-205180]
+t=00949366ms: Step 2.14: Click on Continue button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+Notify: Transaction "001_006_ECM_CreateCasePersonalDetailsContinue" ended with a "Pass" status (Duration: 3,4350 Wasted Time: 0,3650).
+t=00949370ms: Step 2: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00949373ms: Step 3: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=00952594ms: Step 3: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00952604ms: Step 1: Verify Respondents's Visible Text contains Respondents started    [MsgId: MMSG-205180]
+t=00952829ms: Step 1: Verify Respondents's Visible Text contains Respondents successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00952832ms: Step 2: For (var i = 0; i < 24; i++) started    [MsgId: MMSG-205180]
+t=00952839ms: Step 2: For loop iteration number 1 started    [MsgId: MMSG-205180]
+t=00952845ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00953360ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00954428ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00954945ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00965009ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00965511ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 1 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '1'.
+t=00965743ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00966248ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00970138ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00970651ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00970886ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00971393ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=00974465ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00974981ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 25 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '25'.
+t=00976559ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00977061ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 1 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '1'.
+t=00979103ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00979105ms: Step 2.1: Continue successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00979109ms: Step 2: For loop iteration number 1 ended    [MsgId: MMSG-205180]
+t=00979112ms: Step 2: For loop iteration number 2 started    [MsgId: MMSG-205180]
+t=00979115ms: Step 2.1: Continue started    [MsgId: MMSG-205180]
+t=00979618ms: Step 2.1.1: Click on Add new button started    [MsgId: MMSG-205180]
+t=00981861ms: Step 2.1.1: Click on Add new button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=00982366ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox started    [MsgId: MMSG-205180]
+t=00993970ms: Step 2.1.2: Type Mr UI PerformanceTester001 in Name of respondent textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00994472ms: Step 2.1.4: Click on Yes radio started    [MsgId: MMSG-205180]
+Notify: Next row for parameter RespondentNumber = 2 [table  = RespondentNumber].
+Notify: Getting new value for parameter 'RespondentNumber': table = 'RespondentNumber.dat' column = '0' row = '2'.
+t=00994708ms: Step 2.1.4: Click on Yes radio successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00995221ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox started    [MsgId: MMSG-205180]
+t=00999275ms: Step 2.1.5: Type 001001001001 in ACAS Certificate Number textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=00999791ms: Step 2.1.6: Click on Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=01000056ms: Step 2.1.6: Click on Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=01000569ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox started    [MsgId: MMSG-205180]
+t=01003589ms: Step 2.1.7: Type sw1h 9hg in Enter a UK postcode textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=01004095ms: Step 2.1.8: Click on Find address button started    [MsgId: MMSG-205180]
+Notify: Next row for parameter FindAddressNumber = 1 [table  = FindAddressNumber].
+Notify: Getting new value for parameter 'FindAddressNumber': table = 'FindAddressNumber.dat' column = '0' row = '1'.
+t=01006556ms: Step 2.1.8: Click on Find address button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=01007059ms: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter AddressListNumber = 2 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '2'.
+Notify: Next row for parameter AddressListNumber = 3 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '3'.
+Notify: Next row for parameter AddressListNumber = 4 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '4'.
+Notify: Next row for parameter AddressListNumber = 5 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '5'.
+Notify: Next row for parameter AddressListNumber = 6 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '6'.
+Notify: Next row for parameter AddressListNumber = 7 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '7'.
+Notify: Next row for parameter AddressListNumber = 8 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '8'.
+Notify: Next row for parameter AddressListNumber = 9 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '9'.
+Notify: Next row for parameter AddressListNumber = 10 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '10'.
+Notify: Next row for parameter AddressListNumber = 11 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '11'.
+Notify: Next row for parameter AddressListNumber = 12 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '12'.
+Notify: Next row for parameter AddressListNumber = 13 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '13'.
+Notify: Next row for parameter AddressListNumber = 14 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '14'.
+Notify: Next row for parameter AddressListNumber = 15 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '15'.
+Notify: Next row for parameter AddressListNumber = 16 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '16'.
+Notify: Next row for parameter AddressListNumber = 17 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '17'.
+Notify: Next row for parameter AddressListNumber = 18 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '18'.
+Notify: Next row for parameter AddressListNumber = 19 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '19'.
+Notify: Next row for parameter AddressListNumber = 20 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '20'.
+Notify: Next row for parameter AddressListNumber = 21 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '21'.
+Notify: Next row for parameter AddressListNumber = 22 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '22'.
+Notify: Next row for parameter AddressListNumber = 23 [table  = AddressListNumber].
+Notify: Getting new value for parameter 'AddressListNumber': table = 'AddressListNumber.dat' column = '0' row = '23'.
+t=01027765ms: Error -205177: Step 2.1.9: Select Flat 75, Vandon Court, 6...y France, London from Select an address listbox failed - Target object was not found. Identification Method: Descriptors       Snapshot Info [MSH 2 0]    [MsgId: MERR-205177]
+t=01027770ms: Step 2.1: Continue was aborted due to an error in a child Step    [MsgId: MMSG-205180]
+t=01027773ms: Step 2: For (var i = 0; i < 24; i++) was aborted due to an error in a child Step    [MsgId: MMSG-205180]
+Ending iteration 2.
+Starting iteration 3.
+Notify: Next row for parameter Users = 3 [table  = Users].
+Notify: Getting new value for parameter 'Users': table = 'Users.dat' column = '0' row = '3'.
+Notify: Next row for parameter NewParam_1 = 1 [table  = NewParam_1].
+Notify: Getting new value for parameter 'NewParam_1': table = 'NewParam_1.dat' column = '0' row = '1'.
+Notify: Next row for parameter URL = 1 [table  = URL].
+Notify: Getting new value for parameter 'URL': table = 'URL.dat' column = '0' row = '1'.
+Notify: Next row for parameter Password = 3 [table  = Password].
+Notify: Getting new value for parameter 'Password': table = 'Users.dat' column = '1' row = '3'.
+Notify: Transaction "002_001_ECM_LaunchHomePage" started.
+t=01028593ms: Step 1: Navigate to TC.getParam("URL") started    [MsgId: MMSG-205180]
+t=01029856ms: Step 1: Navigate to https://manage-case.perf...tform.hmcts.net/ successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=01029866ms: Step 1: Verify Sign in's Visible Text contains Sign in started    [MsgId: MMSG-205180]
+t=01032182ms: Step 1: Verify Sign in's Visible Text contains Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_001_ECM_LaunchHomePage" ended with a "Pass" status (Duration: 3,5910 Think Time: 0,0040 Wasted Time: 0,6680).
+t=01032185ms: Step 2: Wait 3 seconds started    [MsgId: MMSG-205180]
+t=01035396ms: Step 2: Wait 3 seconds successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=01035399ms: Step 3: Sign in started    [MsgId: MMSG-205180]
+t=01035915ms: Step 3.1: Click on Email address textbox started    [MsgId: MMSG-205180]
+t=01038141ms: Step 3.1: Click on Email address textbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=01038643ms: Step 3.2: Type Users in Email address textbox started    [MsgId: MMSG-205180]
+t=01047538ms: Step 3.2: Type ccdloadtest4503@gmail.com in Email address textbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=01048045ms: Step 3.3: Click on Password passwordbox started    [MsgId: MMSG-205180]
+t=01050264ms: Step 3.3: Click on Password passwordbox successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=01050780ms: Step 3.4: Type ******** in Password passwordbox started    [MsgId: MMSG-205180]
+Notify: Next row for parameter Password = 3 [table  = Password].
+t=01054643ms: Step 3.4: Type ********** in Password passwordbox successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+Notify: Transaction "002_002_ECM_SignIn" started.
+t=01055146ms: Step 3.5: Click on Sign in button started    [MsgId: MMSG-205180]
+t=01067817ms: Step 3.5: Click on Sign in button successfully completed with End Event "Step network completed"    [MsgId: MMSG-205180]
+t=01067820ms: Step 3: Sign in successfully completed with End Event "Action completed"    [MsgId: MMSG-205180]
+t=01067823ms: Step 4: Verify Case List's Visible Text contains Case List started    [MsgId: MMSG-205180]
+t=01088268ms: Error -205177: Step 4: Verify Case List's Visible Text contains Case List failed - Target object was not found. Identification Method: Automatic       Snapshot Info [MSH 3 1]    [MsgId: MERR-205177]
+Notify: Transaction "002_002_ECM_SignIn" ended with a "Fail" status (Duration: 32,9960 Think Time: 0,0020 Wasted Time: 0,3570).
+Notify: Transaction "002_002_ECM_SignIn" has 1 error message(s).
+Notify: The 1st error message associated with transaction "002_002_ECM_SignIn" is "Error -205177: Step 4: Verify Case List's Visible Text contains Case List failed - Target object was not found. Identification Method: Automatic"
+Ending iteration 3.
+Action was aborted.
+Ending Vuser...
+Vuser Terminated.
